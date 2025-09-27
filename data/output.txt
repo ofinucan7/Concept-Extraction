@@ -1,0 +1,564 @@
+ANALYZING
+ANALYZING DATA
+ANALYZING DATA SUMMARIES
+Answer
+Area
+Area under the curve
+Average length
+Blue
+Blue curve
+Blue curve is tallest
+Box
+Box represents
+Box represents the middle
+Boxplot
+Calculate the area
+Calculating
+Categorical
+Categorical Values often result
+Change
+Change shape
+Change shape depending
+Coaster lengths
+Coaster lengths tend
+Common
+Common and not unusual
+Continuous
+Continuous distributions
+Continuous distributions are defined
+DATA
+DATA SUMMARIES
+DESCRIPTIVE
+DESCRIPTIVE STATISTICS
+Defined
+Defined by symmetry
+Definition
+Definition Examples Quantitative
+Definition Examples Response
+Denominator
+Denominator DF held
+Denominator DF held constant
+Dependent
+Describes how many standard
+Description
+Descriptive Orientation
+Descriptive Orientation Definition
+Determine
+Determine if the top
+Dev
+Displays
+Displays and Summary
+Displays and Summary Statistics
+Distance
+Distance from Mean Description
+Distribution Observations
+Exact
+External
+External material
+F-Distributions REVIEW
+F-distribution
+F-distribution becomes less right-skewed
+GRAPHICAL SUMMARIES
+GRAPHICAL SUMMARIES OF QUANTITATIVE
+Generally
+Generally unknown
+Graphical
+Graphical Displays
+Graphical Displays and Summary
+Grey
+Grey curve
+Grey curve is shifted
+Histogram
+Identify
+Identify the population
+Independent
+Larger
+Larger sample
+Left whisker
+Level
+Level of Measurement
+Level of Measurement Definition
+Measurement
+Measurement Definition
+Measurement Definition Examples Quantitative
+Median
+Normal
+Normal Distribution
+Normal Distribution Observations
+Numerator
+Numerator DF held
+Numerator DF held constant
+Occur
+Occur in the t-distribution
+Orientation
+Orientation Definition
+Orientation Definition Examples Response
+Outliers
+PROBABILITY
+PROBABILITY DISTRIBUTION
+Page
+Parameter
+Percentile
+Population
+Populations and Samples
+Predictor
+Predictors
+Preview
+Price
+Price of house
+Price of house Predictor
+QUANTITATIVE DATA
+Quantitative
+Quantitative Values result
+Question
+REVIEW
+Random
+Random sample
+Red
+Red curve
+Red curve is shortest
+Representative
+Representative of the population
+Response
+STATISTICAL
+STATISTICAL TERMINOLOGY
+SUMMARIES
+SUMMARIES OF QUANTITATIVE
+SUMMARIES OF QUANTITATIVE DATA
+Sample
+Samples
+Scenario
+Slightly
+Slightly unusual
+Standard
+Standard Normal
+Standard normal distribution
+Standard normal table
+Statistic
+Statistics
+Std
+Summary
+Summary Statistics
+Symmetric
+TERMINOLOGY
+Task
+Unimodal
+Unusual but not unheard
+Variable
+Variables
+Whiskers
+Whiskers represents
+Whiskers represents top
+Z-score
+Z-scores
+Z-scores or Z-statistics
+Z-statistics
+access
+access to every member
+affected
+affected by its maximum
+area in the center
+areas
+areas are interpreted
+average
+average of a set
+average top
+average top speed
+bars
+bars of different heights
+bell-shaped
+bell-shaped curve
+bimodal
+bottom
+calculate
+calculate p-values
+calculate p-values and critical
+calculate the proportion
+calculated
+calculated from a sample
+calculation
+case
+case Level
+case Level of Measurement
+case to case
+case to case Level
+cases
+center
+center with less area
+centered
+changes
+changes depending
+characteristic
+characteristic of a population
+characteristic that is measured
+chi-squared
+chi-squared distribution
+classified
+classified according to descriptive
+classified according to level
+classifying
+classifying them into groups
+closely
+closely resembles
+closely resembles a normal
+coaster
+coaster is affected
+coasters
+coasters found
+coasters found a sample
+coasters had a top
+coasters in the sample
+coasters plotted
+coasters plotted in histogram
+collection
+collection of items
+compare
+compare two sources
+complete
+complete collection
+complete collection of items
+conjunction
+conjunction with other variables
+constant
+contained
+contained in a sample
+continuous probability
+continuous probability distribution
+counting
+counting or measuring
+counting or measuring Price
+critical
+critical values in inference
+curve
+curve equals
+curve is shifted
+curve is shifted farthest
+curve is shortest
+curve is tallest
+curves
+data into quartiles
+data that is normal
+data using bars
+defined as curves
+degrees
+degrees of freedom
+degrees of freedom increase
+denoted
+denoted with individual
+denoted with individual points
+dependent upon the sample
+depending
+depending on the degrees
+describe
+describe a response
+describe a response variable
+describes
+describes a characteristic
+describes the probability
+determine the shape
+deviation
+deviations
+deviations an observation
+differs
+differs from case
+displays distribution
+displays distribution of quantitative
+distribution
+distribution Denominator
+distribution Denominator DF held
+distribution can be standardized
+distribution of length
+distribution of quantitative
+distribution of quantitative data
+distribution of top
+distribution of top speed
+distribution that is similar
+distribution to change
+distribution to change shapes
+distribution used to compare
+distribution whose data
+distributions are defined
+distributions whose shape
+distributions whose shape changes
+divides
+divides quantitative
+divides quantitative data
+easily
+easily study
+equals
+equation
+estimate
+estimate of a parameter
+estimate parameters
+event
+event occurring
+extreme
+extreme observations
+fall
+fall Distance
+family
+family of distributions
+farthest
+fatter
+fatter tails
+feet
+find
+find the number
+five-number
+five-number summary
+footage
+footage Categorical
+found
+found a sample
+freedom
+freedom are often dependent
+freedom increase
+freedom that determine
+frequencies
+frequencies in each range
+function
+function that describes
+garage
+garage Descriptive
+garage Descriptive Orientation
+garage Descriptive Orientation Definition
+groups
+groups External
+groups External material
+harder
+harder to obtain
+harder to obtain powerful
+height
+heights
+heights to show
+heights to show frequencies
+held
+held constant
+house
+house Predictor
+increase
+increases
+increases degrees
+increases degrees of freedom
+indicating
+individual
+individual points
+inference
+information
+information is contained
+interested
+interested in studying
+interpreted
+interpreted as probabilities
+investigated
+items
+items or measurements
+items selected
+largest
+largest spread
+left
+left tail
+left-skewed
+length
+lengths
+lengths tend
+lie
+longer
+longer left
+longer left tail
+longer right tail
+making
+making it harder
+material
+maximum
+maximum height
+measure
+measured
+measured or observed
+measurements that a statistician
+measuring
+measuring Price
+measuring Price of house
+member
+member of the population
+middle
+modality
+mph
+multimodal
+multiple
+multiple parameters
+non-negative
+normal distribution Denominator
+normal table
+number
+number of rooms
+observations
+observations on each side
+observed
+observed on a subject
+observing
+observing subjects
+observing subjects and classifying
+obtain
+obtain powerful
+obtain powerful results
+occurring
+p-values
+p-values and critical
+parameters
+parameters for degrees
+peak
+people
+percentage
+percentage of a variable
+percentile Median
+plotted
+plotted in histogram
+plotted in the boxplot
+pnorm
+pnorm function
+points
+population on a smaller
+population standard
+population standard deviation
+population to more easily
+powerful
+powerful results
+predict
+probabilities
+probability distribution whose data
+probability of an event
+properties
+proportion
+proportion of people
+quantitative data into quartiles
+quantitative data using bars
+quartile
+quartiles
+range
+referred
+referred to as Z-scores
+represent
+represents
+represents the middle
+represents top
+represents top and bottom
+researcher
+researcher is interested
+resembles
+resembles a normal
+resembles a normal distribution
+response variable
+response variable Square
+response variable Square footage
+result
+result from counting
+result from observing
+result from observing subjects
+results
+reveal
+reveal about the distribution
+right-skewed
+right-skewed and more closely
+roller
+roller coaster is affected
+roller coasters
+roller coasters plotted
+rooms
+sample had a top
+sample mean and standard
+sample size
+sample that serves
+scale
+score
+scores
+scores have a normal
+selected
+selected from the population
+serves
+serves as an estimate
+set
+set of data
+shape
+shape changes
+shape changes depending
+shape depending
+shapes
+shifted
+shifted farthest
+shortest
+show
+show frequencies
+side
+similar
+similar to the standard
+size
+skewness
+skewness and modality
+smaller
+smaller scale
+smallest
+smallest spread
+sources
+sources of variability
+speed
+speed of a roller
+spread
+square
+square footage
+square footage Categorical
+standard deviation
+standard deviations an observation
+standardized
+standardized using the equation
+statistician
+steel
+steel or wood
+study
+study and better understand
+studying
+subject
+subject that differs
+subjects
+subjects and classifying
+subset
+subset of items
+subset of items selected
+symmetry
+t-distribution gets taller
+table
+tail
+tails
+tails and less area
+taller
+taller in the center
+tallest
+tend
+test
+test multiple
+test multiple parameters
+top
+top and bottom
+top speed
+track
+track length
+uncommon
+understand
+understand the average
+understand the average top
+understand the population
+unheard
+uniform
+unimodal and symmetric
+unknown
+unusual
+variability
+variable Square
+variable Square footage
+variable ’s values fall
+variables Price
+variables Price of house
+variables be classified
+whisker
+wood
+’ll

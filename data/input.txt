@@ -1,0 +1,211 @@
+
+Page
+1
+of 6
+➢ Variables
+➢ Populations and Samples
+➢ Graphical Displays and Summary Statistics
+➢ Standard Normal, t, and F-Distributions
+REVIEW: VARIABLES, DESCRIPTIVE
+STATISTICS, AND PROBABILITY
+DISTRIBUTIONS1VARIABLES
+• Variable: a characteristic that is measured or observed on a
+subject that differs from case to case
+Level of
+Measurement
+Definition Examples
+Quantitative Values result from counting or measuring Price of house, square footage
+Categorical Values often result from observing subjects and
+classifying them into groups
+External material, has a garage
+Descriptive
+Orientation
+Definition Examples
+Response
+(Dependent)
+Variable that is being investigated and want to
+predict; being described by other variables
+Price of house
+Predictor
+(Independent)
+Variable that is used (often in conjunction with other
+variables) to describe a response variable
+Square footage, number of rooms,
+external material, has a garage2EXAMPLE:VARIABLES
+• Scenario: Determine if the top speed of a roller coaster is affected
+by its maximum height, track length, and material (steel or wood).
+• Question: How should the variables be classified according to level
+of measurement?
+• Quantitative: _________________________________________
+• Categorical: ____________
+• Question: How should the variables be classified according to
+descriptive orientation?
+• Response: ____________
+• Predictors: _________________________________________3
+STATISTICAL TERMINOLOGY
+• Population: any complete collection of items or measurements that
+a statistician/researcher is interested in studying
+• Parameter: a value that describes a characteristic of a population
+• Generally unknown – need access to every member of the population
+• Examples: 𝜇 (mean), 𝜎 (standard deviation), 𝑝 (proportion)
+• Sample: a subset of items selected from the population to more
+easily study and better understand the population
+• Representative of the population on a smaller scale
+• Statistic: a value calculated from a sample that serves as an
+estimate of a parameter
+• Examples: ത𝑋 (mean), 𝑆 (standard deviation), Ƹ 𝑝 (proportion)4EXAMPLE: STATISTICAL TERMINOLOGY
+• Scenario: Want to understand the average top speed of a roller
+coaster. Random sample of 30 coasters found a sample mean of
+54.33 mph.
+• Task: Identify the population, parameter, sample, and statistic.
+• Answer:
+• Population: ____________________
+• Parameter: _________________ of ____ roller coasters
+• Exact value is _________, but we can represent it __________________
+• Sample: ___________________________
+• Statistic: ____________5NUMERIC SUMMARIES OF QUANTITATIVE DATA
+• Mean: the average of a set of data
+ത𝑋 = 1
+𝑛 ෍𝑖=1
+𝑛
+𝑋𝑖 = 𝑋1 + 𝑋2 + ⋯ + 𝑋𝑛
+𝑛
+• Standard deviation: measure of how far away an observation is
+from the mean
+𝑆 = σ𝑖=1
+𝑛 𝑋𝑖 − ത𝑋 2
+𝑛 − 1
+• Percentile: value at or below which a given percentage of a
+variable’s values fall
+Distance from Mean Description
+Within 1 SD Common and not unusual
+Between 1 and 2 SD Slightly unusual
+Between 2 and 3 SD Unusual but not unheard of
+More than 3 SD Quite uncommon (Outliers)6
+GRAPHICAL SUMMARIES OF QUANTITATIVE DATA
+• Histogram: displays distribution of quantitative data using bars of
+different heights to show frequencies in each range
+• Defined by symmetry/skewness and modality
+• Symmetry: Symmetric, left-skewed (longer left tail), right-skewed (longer right tail)
+• Modality: Unimodal, bimodal, multimodal, uniform
+• Boxplot: divides quantitative data into quartiles where:
+• Box represents the middle 50% of the data
+• Whiskers represents top and bottom 25% respectively
+• Outliers (extreme observations) are denoted with individual points
+1st quartile
+25th percentile
+Median
+50th percentile
+3rd quartile
+75th percentileOutliers7EXAMPLE: ANALYZING DATA SUMMARIES
+• Scenario: Track length of 30 roller coasters plotted in histogram
+along with the sample mean and standard deviation
+• Question: What do these reveal about the distribution of length?
+• Answer:
+• Histogram: Track length is ________ and _________ with
+a mean ______________
+• One peak at _____ feet with a ____________ of observations
+on each side
+• Mean: Average length of the 30 coasters is __________
+• Standard Deviation: Coaster lengths tend to ________
+___________ feet by about ________________________
+• Coaster lengths between ______ and ______ feet are ______
+________ as they lie within ___ standard deviation of the mean
+Statistic Value
+Mean 2811.57
+Std. Dev. 1398.448EXAMPLE: ANALYZING DATA SUMMARIES
+• Scenario: Top speed of the same 30 roller coasters plotted in the
+boxplot along with the five-number summary.
+• Question: What do these reveal about the distribution of top speed?
+• Answer:
+• Boxplot: Top speed is _______________ with a median around ____
+• Left whisker is ______________, indicating a few _____________________
+• Median: ____ of the coasters in the sample had a top speed ___________
+• Quartiles: ____ of the coasters had a top speed ____________ mph while
+another ____ had a top speed ____________ mph9
+PROBABILITY DISTRIBUTION
+• Probability distribution: a function that describes the probability of
+an event occurring given a value from the distribution
+• Continuous distributions are defined as curves
+• Area under the curve equals 1, so areas are interpreted as probabilities
+• Change shape depending on the mean, standard deviation, degrees of
+freedom, etc.
+Normal Distribution Observations
+• Blue curve is tallest because it has the smallest spread
+• Red curve is shortest because it has the largest spread
+• Grey curve is shifted farthest to the right because it
+has the largest mean10STANDARD NORMAL DISTRIBUTION
+• Standard normal distribution: probability distribution whose data is
+described by a bell-shaped curve (unimodal and symmetric) with a
+mean 𝜇 = 0 and population standard deviation 𝜎 = 1
+• Values are referred to as Z-scores or Z-statistics
+• Describes how many standard deviations an observation is from the
+mean in data that is normal
+• Values from any normal distribution can
+be standardized using the equation
+𝑍 = 𝑋 − 𝜇
+𝜎11X
+Z
+40 70 100 130 160
+-0.80
+88
+EXAMPLE: USING THE NORMAL DISTRIBUTION
+• Scenario: IQ scores have a normal distribution with mean 100 and
+standard deviation 15.
+• Question: How can we calculate the proportion of people with an
+IQ score below 88?
+• Answer:
+• ____________ 88 to find the number of
+___________________ 88 is from the mean
+• Calculating the ________
+• Calculate the area to the _____ of the
+Z-score using either the:
+• Standard normal table
+• pnorm function in R12
+EXAMPLE: USING THE NORMAL DISTRIBUTION
+• Scenario: IQ scores have a normal distribution with mean 100 and
+standard deviation 15.
+• Question: How can we calculate the proportion of people with an
+IQ score below 88?
+• Answer:
+𝑃 𝑋 < 88 = _______________________
+= ________________
+= _________
+X
+Z
+40 70 100 130 160
+_____
+88
+We’ll see how to do this calculation
+using R next class.13DEGREES OF FREEDOM
+• Degrees of freedom: a measure of how much information is
+contained in a sample that is available to estimate parameters
+• Occur in the t-distribution, F-distribution, and chi-squared distribution
+• Range from 1 to ∞ and cause the distribution to change shapes
+• Used to calculate p-values and critical values in inference
+• Degrees of freedom are often dependent upon the sample size:
+• Larger sample → More __________ → More ___ → More ______________
+• Preview: In some cases, we can test multiple parameters at once
+• This increases degrees of freedom in a different way, making it harder to
+obtain powerful results
+• More on this in a few weeks14T-DISTRIBUTION
+• t-Distribution: continuous probability distribution that is similar to
+the standard normal distribution in that it is symmetric, unimodal,
+and centered at 0 but differs in that it:
+• Is a family of distributions whose shape changes depending on the
+degrees of freedom
+• Has fatter tails and less area in the center
+• As degrees of freedom increase,
+the t-distribution gets taller in the
+center with less area in the tails.15
+F-DISTRIBUTION
+• F-Distribution: continuous probability distribution used to compare
+two sources of variability that has the following properties:
+• Unimodal, right-skewed, and always non-negative
+• Two parameters for degrees of freedom that determine the shape
+• As the degrees of freedom increase, the F-distribution becomes less right-skewed
+and more closely resembles a normal distribution
+Denominator DF held
+constant at 50
+Numerator DF held
+constant at 1016

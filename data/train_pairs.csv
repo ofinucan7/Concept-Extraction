@@ -1,0 +1,38 @@
+text,candidate,label,yake_score
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",operating systems,1,0.002
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",process scheduling,1,0.002
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",memory management,1,0.002
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",file system control,1,0.002
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",stability,0,0.02
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",efficiency,0,0.02
+"Operating systems manage both hardware and software resources. They provide process scheduling, memory management, and file system control to ensure stability and efficiency.",resources,0,0.02
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",machine learning,1,0.002
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",supervised learning,1,0.002
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",unsupervised learning,1,0.002
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",labeled data,1,0.002
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",computers,0,0.02
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",patterns,0,0.02
+"Machine learning enables computers to recognize patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers hidden structures without explicit labels.",data,0,0.02
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",databases,1,0.002
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",tables,1,0.002
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",SQL,1,0.002
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",indexes,1,0.002
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",information,0,0.02
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",rows,0,0.02
+"Databases organize information into tables with rows and columns. SQL is the standard language for querying and updating data, while indexes improve query performance.",columns,0,0.02
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",TCP/IP model,1,0.002
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",transport layer,1,0.002
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",application layer,1,0.002
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",HTTP,1,0.002
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",FTP,1,0.002
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",communication,0,0.02
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",layers,0,0.02
+"In networking, the TCP/IP model divides communication into layers. The transport layer ensures reliable delivery, while the application layer supports protocols like HTTP and FTP.",delivery,0,0.02
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",blockchain technology,1,0.002
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",distributed ledgers,1,0.002
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",blocks,1,0.002
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",cryptographic linking,1,0.002
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",immutability,1,0.002
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",transactions,0,0.02
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",network,0,0.02
+"Blockchain technology stores transactions in distributed ledgers. Each block is linked cryptographically, ensuring transparency, security, and immutability across the network.",security,0,0.02

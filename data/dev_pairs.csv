@@ -1,0 +1,25 @@
+text,candidate,label,yake_score
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",genetic algorithms,1,0.002
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",natural selection,1,0.002
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",crossover,1,0.002
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",mutation,1,0.002
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",fitness evaluation,1,0.002
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",problems,0,0.02
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",solutions,0,0.02
+"Genetic algorithms are inspired by natural selection. They use crossover, mutation, and fitness evaluation to optimize solutions to complex problems.",inspired,0,0.02
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",cloud computing,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",storage,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",computation,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",infrastructure as a service,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",platform as a service,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",software as a service,1,0.002
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",internet,0,0.02
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",access,0,0.02
+"Cloud computing provides scalable access to storage and computation over the internet. Key models include infrastructure as a service, platform as a service, and software as a service.",models,0,0.02
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",cybersecurity,1,0.002
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",encryption,1,0.002
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",firewalls,1,0.002
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",intrusion detection systems,1,0.002
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",systems,0,0.02
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",data,0,0.02
+"Cybersecurity aims to protect systems and data from unauthorized access. Common techniques include encryption, firewalls, and intrusion detection systems.",techniques,0,0.02
