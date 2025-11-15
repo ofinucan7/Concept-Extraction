@@ -1,0 +1,42 @@
+Slide 1: None
+Slide 2: Functions are used in programming
+Slide 3: We use functions in programming similar to how functions are used in mathematics
+Slide 4: A parameter is a variable or input that a function takes. 
+	 The function body is the main chunk of the code.
+	 The result that a function gives out can be returned.
+	 We can take in zero or more parameters.
+Slide 5: We are able to call functions that we make.
+Slide 6: The visibility type determines who can call each function.
+	 Static is a required element for now.
+	 The function name is how you call a function.
+	 The header is the first line of a function, which contains its name, its return type and parameters it takes in.
+	The function body is the part of a function following the header that does the action of the function.
+	 We can return a value from a function.
+Slide 7: None
+Slide 8: None
+Slide 9: The return value should be what we want to give out of the function.
+Slide 10: We should name our functions things that are relevant to what the function does.
+Slide 11: The parameters are what we take into a function.
+Slide 12: None
+Slide 13: None
+Slide 14: None
+Slide 15: None
+Slide 16: None
+Slide 17: None
+Slide 18: Scope is the relevance and level of access a function should have.
+Slide 19: There are varying levels of scope.
+Slide 20: None
+Slide 21: The act of giving parameters to a function is called passing-in.
+	  Java has 2 different types of passing-in.
+Slide 22: Pass-by-value is sending a copy of a variable to a function.
+	  If we pass-by-value a variable, changes made will not reflect when the function returns.
+	  All primitive variable types are pass-by-value.
+Slide 23: Pass-by-reference is giving the function full access to the variable.
+	  A pass-by-reference variable is updated by the function.
+	  All non-primitive type variables are pass-by-reference.
+Slide 24: None
+Slide 25: We can make a public static function.
+	  When making a function, we need to set all of these components.
+Slide 26: We should use void as our return type because we don't need to give back any information.
+Slide 27: None
+Slide 28: None

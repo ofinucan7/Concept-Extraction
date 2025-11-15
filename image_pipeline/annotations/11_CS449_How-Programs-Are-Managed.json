@@ -1,0 +1,302 @@
+{
+  "deck": "11_CS449_How-Programs-Are-Managed",
+  "batches": [
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "per_slide": {
+        "1": [
+          "The slide introduces the topic 'How Programs Are Managed' in the context of a course on Systems Software."
+        ],
+        "2": [
+          "The slide poses the question 'Where's the Lie?' and hints at exploring various operating systems questions."
+        ],
+        "3": [
+          "This slide explains that programs are loaded into memory by the operating system and must exist in memory before execution.",
+          "It also mentions that programs go through significant effort to have all their data and code in memory."
+        ],
+        "4": [
+          "The slide discusses the misconception that programs are the only things running, stating that this is not true.",
+          "It emphasizes that operating systems create illusions about program execution."
+        ],
+        "5": [
+          "This slide clarifies that many programs can run simultaneously, with each running program referred to as a process.",
+          "It highlights the role of multitasking operating systems in managing concurrent processes and the challenges of switching between them."
+        ]
+      },
+      "sentences": [
+        "The slide introduces the topic 'How Programs Are Managed' in the context of a course on Systems Software.",
+        "The slide poses the question 'Where's the Lie?' and hints at exploring various operating systems questions.",
+        "This slide explains that programs are loaded into memory by the operating system and must exist in memory before execution.",
+        "It also mentions that programs go through significant effort to have all their data and code in memory.",
+        "The slide discusses the misconception that programs are the only things running, stating that this is not true.",
+        "It emphasizes that operating systems create illusions about program execution.",
+        "This slide clarifies that many programs can run simultaneously, with each running program referred to as a process.",
+        "It highlights the role of multitasking operating systems in managing concurrent processes and the challenges of switching between them."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "per_slide": {
+        "6": [
+          "A process is defined as an abstraction representing a single instance of a program, where an executable represents the initial state of that program.",
+          "The Operating System (OS) defines what a process is and maintains two key aspects: control flow and memory layout.",
+          "The focus is on control flow, questioning how we determine when a program runs."
+        ],
+        "7": [
+          "The slide introduces the concept of CPU scheduling, indicated by the title 'CPU Scheduling' and the phrase 'Eeny Meeny Miney Moe'."
+        ],
+        "8": [
+          "The reality of running processes is illustrated with a scenario of a machine with four separate CPUs, allowing for concurrent execution of four processes.",
+          "The slide poses a question about handling a fifth process when only four CPUs are available."
+        ],
+        "9": [
+          "Multiplexing is introduced as a method for sharing a common resource when fewer resources are available than needed.",
+          "The slide discusses the need to run processes in the foreground and background on a machine with a single CPU, emphasizing the need for process switching."
+        ],
+        "10": [
+          "The slide critiques the naive solution of running processes sequentially, highlighting the lack of flexibility in stopping one process to start another.",
+          "It emphasizes the necessity for computers to be useful to humans by allowing simultaneous process execution."
+        ]
+      },
+      "sentences": [
+        "A process is defined as an abstraction representing a single instance of a program, where an executable represents the initial state of that program.",
+        "The Operating System (OS) defines what a process is and maintains two key aspects: control flow and memory layout.",
+        "The focus is on control flow, questioning how we determine when a program runs.",
+        "The slide introduces the concept of CPU scheduling, indicated by the title 'CPU Scheduling' and the phrase 'Eeny Meeny Miney Moe'.",
+        "The reality of running processes is illustrated with a scenario of a machine with four separate CPUs, allowing for concurrent execution of four processes.",
+        "The slide poses a question about handling a fifth process when only four CPUs are available.",
+        "Multiplexing is introduced as a method for sharing a common resource when fewer resources are available than needed.",
+        "The slide discusses the need to run processes in the foreground and background on a machine with a single CPU, emphasizing the need for process switching.",
+        "The slide critiques the naive solution of running processes sequentially, highlighting the lack of flexibility in stopping one process to start another.",
+        "It emphasizes the necessity for computers to be useful to humans by allowing simultaneous process execution."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "per_slide": {
+        "11": [
+          "The slide discusses the concept of multiplexing the CPU by quickly switching between processes.",
+          "It explains that the operating system (OS) retains and restores the state or context of the process, which is stored as process metadata in memory."
+        ],
+        "12": [
+          "This slide introduces the context switch, which occurs when an OS transitions from one process to another.",
+          "It outlines the steps involved in a context switch, including storing registers, determining the next process, loading registers from memory, and jumping to the old program counter."
+        ],
+        "13": [
+          "The slide provides a deeper dive into the context of processes, illustrating how the state of registers is stored when pausing a process.",
+          "It presents examples of x86-64 assembly syntax for two processes, showing the context and CPU state for each."
+        ],
+        "14": [
+          "This slide raises the question of when a program should pause to allow another to run.",
+          "It distinguishes between cooperative scheduling, where programs voluntarily yield control, and preemptive scheduling, where the OS forcibly pauses programs."
+        ],
+        "15": [
+          "The slide explains round-robin scheduling as a method to cycle through processes for equal time allocation.",
+          "It emphasizes fairness in scheduling, ensuring each process receives an equal stake in CPU time."
+        ]
+      },
+      "sentences": [
+        "The slide discusses the concept of multiplexing the CPU by quickly switching between processes.",
+        "It explains that the operating system (OS) retains and restores the state or context of the process, which is stored as process metadata in memory.",
+        "This slide introduces the context switch, which occurs when an OS transitions from one process to another.",
+        "It outlines the steps involved in a context switch, including storing registers, determining the next process, loading registers from memory, and jumping to the old program counter.",
+        "The slide provides a deeper dive into the context of processes, illustrating how the state of registers is stored when pausing a process.",
+        "It presents examples of x86-64 assembly syntax for two processes, showing the context and CPU state for each.",
+        "This slide raises the question of when a program should pause to allow another to run.",
+        "It distinguishes between cooperative scheduling, where programs voluntarily yield control, and preemptive scheduling, where the OS forcibly pauses programs.",
+        "The slide explains round-robin scheduling as a method to cycle through processes for equal time allocation.",
+        "It emphasizes fairness in scheduling, ensuring each process receives an equal stake in CPU time."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "per_slide": {
+        "16": [
+          "The slide discusses the concept of fairness in resource allocation, using the example of playing the video game Doom Eternal.",
+          "It illustrates a round-robin scheduling method where Doom Eternal receives 25% of the CPU resources."
+        ],
+        "17": [
+          "This slide emphasizes the need to tweak round-robin schedulers to incorporate a sense of priority.",
+          "It visualizes how processes are scheduled, showing that Doom Eternal only gets 25% of the resources."
+        ],
+        "18": [
+          "The slide proposes giving some tasks a longer quantum to improve scheduling.",
+          "It defines a quantum as the amount of time a task is guaranteed to run, demonstrating a new scheduling approach."
+        ],
+        "19": [
+          "This slide suggests increasing the chance of a specific task being scheduled by combining round-robin with priority.",
+          "It introduces the concept of two queues that switch back and forth, enhancing the scheduling process."
+        ],
+        "20": [
+          "The final slide discusses the possibility of hybrid approaches to scheduling.",
+          "It highlights the allure of combining different methods to optimize resource allocation."
+        ]
+      },
+      "sentences": [
+        "The slide discusses the concept of fairness in resource allocation, using the example of playing the video game Doom Eternal.",
+        "It illustrates a round-robin scheduling method where Doom Eternal receives 25% of the CPU resources.",
+        "This slide emphasizes the need to tweak round-robin schedulers to incorporate a sense of priority.",
+        "It visualizes how processes are scheduled, showing that Doom Eternal only gets 25% of the resources.",
+        "The slide proposes giving some tasks a longer quantum to improve scheduling.",
+        "It defines a quantum as the amount of time a task is guaranteed to run, demonstrating a new scheduling approach.",
+        "This slide suggests increasing the chance of a specific task being scheduled by combining round-robin with priority.",
+        "It introduces the concept of two queues that switch back and forth, enhancing the scheduling process.",
+        "The final slide discusses the possibility of hybrid approaches to scheduling.",
+        "It highlights the allure of combining different methods to optimize resource allocation."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "per_slide": {
+        "21": [
+          "The slide discusses human perception in ideal circumstances, highlighting the difference between reality and illusion in terms of perceived concurrency.",
+          "It illustrates how quickly switching between tasks can create an illusion of concurrency without noticeable delays."
+        ],
+        "22": [
+          "The slide emphasizes that there is no optimal way to perfectly schedule general processes, particularly in relation to user inputs.",
+          "It presents a scenario where the operating system ideally schedules a task just before a user action, but notes the unpredictability of user interactions."
+        ],
+        "23": [
+          "This slide raises the question of how hardware stops a program and introduces the concept of interrupts as a mechanism for context switching.",
+          "It explains that hardware supports interrupts to manage program execution and control flow."
+        ],
+        "24": [
+          "The slide introduces interrupts as a necessary but disruptive aspect of program execution, emphasizing their importance despite being considered rude."
+        ],
+        "25": [
+          "The slide defines interrupts as exceptional states that divert execution from normal flow, distinguishing between hardware and software interrupts.",
+          "It also mentions system calls as a type of interrupt and discusses how segmentation faults and page faults are also forms of interrupts."
+        ]
+      },
+      "sentences": [
+        "The slide discusses human perception in ideal circumstances, highlighting the difference between reality and illusion in terms of perceived concurrency.",
+        "It illustrates how quickly switching between tasks can create an illusion of concurrency without noticeable delays.",
+        "The slide emphasizes that there is no optimal way to perfectly schedule general processes, particularly in relation to user inputs.",
+        "It presents a scenario where the operating system ideally schedules a task just before a user action, but notes the unpredictability of user interactions.",
+        "This slide raises the question of how hardware stops a program and introduces the concept of interrupts as a mechanism for context switching.",
+        "It explains that hardware supports interrupts to manage program execution and control flow.",
+        "The slide introduces interrupts as a necessary but disruptive aspect of program execution, emphasizing their importance despite being considered rude.",
+        "The slide defines interrupts as exceptional states that divert execution from normal flow, distinguishing between hardware and software interrupts.",
+        "It also mentions system calls as a type of interrupt and discusses how segmentation faults and page faults are also forms of interrupts."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "per_slide": {
+        "26": [
+          "The slide presents typical UNIX/Linux system calls including read, write, open, close, stat, fork, and execve.",
+          "Each system call is associated with a specific function, such as reading bytes from an open file or spawning a copy of the current process."
+        ],
+        "27": [
+          "System calls are described as predictable, intentional interrupts that occur at specific instructions, known as synchronous interrupts.",
+          "In the x86-64 architecture, the program pauses at a syscall instruction and resumes once the OS completes the task."
+        ],
+        "28": [
+          "The slide illustrates a 'Hello, Hello World' example in x86-64 assembly language, demonstrating how to write to standard output.",
+          "It shows the syscall for writing and how the kernel handles the open and write operations."
+        ],
+        "29": [
+          "A hardware timer can preempt a program at any time, resulting in asynchronous interrupts.",
+          "In a preemptive operating system, the timer is programmed to send signals at regular intervals to manage process execution."
+        ],
+        "30": [
+          "The slide explains that a programmable table in memory defines where code exists to handle each interrupt.",
+          "Each interrupt is assigned a number, and when an interrupt occurs, the corresponding entry in a lookup table is used to determine the kernel's response."
+        ]
+      },
+      "sentences": [
+        "The slide presents typical UNIX/Linux system calls including read, write, open, close, stat, fork, and execve.",
+        "Each system call is associated with a specific function, such as reading bytes from an open file or spawning a copy of the current process.",
+        "System calls are described as predictable, intentional interrupts that occur at specific instructions, known as synchronous interrupts.",
+        "In the x86-64 architecture, the program pauses at a syscall instruction and resumes once the OS completes the task.",
+        "The slide illustrates a 'Hello, Hello World' example in x86-64 assembly language, demonstrating how to write to standard output.",
+        "It shows the syscall for writing and how the kernel handles the open and write operations.",
+        "A hardware timer can preempt a program at any time, resulting in asynchronous interrupts.",
+        "In a preemptive operating system, the timer is programmed to send signals at regular intervals to manage process execution.",
+        "The slide explains that a programmable table in memory defines where code exists to handle each interrupt.",
+        "Each interrupt is assigned a number, and when an interrupt occurs, the corresponding entry in a lookup table is used to determine the kernel's response."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "11_CS449_How-Programs-Are-Managed",
+      "batch_slides": [
+        31,
+        32,
+        33
+      ],
+      "per_slide": {
+        "31": [
+          "The interrupt table is a simple table that lists various interrupt values and their descriptions.",
+          "A fun fact about the interrupt table is that it is often located at address 0x0 in memory, which poses challenges for operating system kernels.",
+          "When a process triggers an interrupt or an external hardware sends a signal to the interrupt controller, the CPU jumps to the given address."
+        ],
+        "32": [
+          "The slide discusses interrupt handling in the context of x86-64 architecture, showing the process context and CPU state.",
+          "An interrupt is identified as a likely cause of prior interruptions, and the interrupt handler is responsible for managing context switching and scheduling."
+        ],
+        "33": [
+          "Interrupts can be categorized in several ways, including hardware exceptions, software traps, asynchronous interrupts, and synchronous interrupts.",
+          "Interrupts are essential for operating systems to function, as they occur during various events such as keyboard input, network packet reception, audio requests, and even division by zero."
+        ]
+      },
+      "sentences": [
+        "The interrupt table is a simple table that lists various interrupt values and their descriptions.",
+        "A fun fact about the interrupt table is that it is often located at address 0x0 in memory, which poses challenges for operating system kernels.",
+        "When a process triggers an interrupt or an external hardware sends a signal to the interrupt controller, the CPU jumps to the given address.",
+        "The slide discusses interrupt handling in the context of x86-64 architecture, showing the process context and CPU state.",
+        "An interrupt is identified as a likely cause of prior interruptions, and the interrupt handler is responsible for managing context switching and scheduling.",
+        "Interrupts can be categorized in several ways, including hardware exceptions, software traps, asynchronous interrupts, and synchronous interrupts.",
+        "Interrupts are essential for operating systems to function, as they occur during various events such as keyboard input, network packet reception, audio requests, and even division by zero."
+      ],
+      "gold_coverage": {}
+    }
+  ]
+}

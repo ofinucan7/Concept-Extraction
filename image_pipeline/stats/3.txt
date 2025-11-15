@@ -1,0 +1,32 @@
+Programs
+Memory
+Operating system
+Execute
+Process
+Multitasking OS
+Executable
+Processor
+Control flow
+Memory layout
+Multiplexing
+Naive Solution
+Context
+Context switch
+Cooperative scheduling
+Preemptive Scheduling
+Interrupt
+Quantum
+Hardware exception
+Software trap
+Read
+Write
+Open
+Close
+Stat
+Fork
+Execve
+Synchronous interrupts
+Asynchronous interrupts
+Hardware timer
+Scheduler
+Interrupt vector table / Interrupt descriptor table

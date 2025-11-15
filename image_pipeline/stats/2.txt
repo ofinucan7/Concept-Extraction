@@ -1,0 +1,14 @@
+OOP/Object Oriented Programming  
+class component(s)  
+instance variable(s)  
+constructor(s)  
+method(s)  
+extends  
+inheritance  
+subclass(es)  
+superclass(es)  
+override  
+override annotation  
+method overriding  
+protected access modifier  
+ownership

@@ -1,0 +1,56 @@
+How Programs Are Managed  
+Where's the Lie  
+Programs loaded into memory  
+Programs must exist in memory  
+Programs have data and code  
+Programs are not only things running  
+Operating systems create illusions  
+Many programs run simultaneously  
+Each running program is a process  
+Multitasking operating systems  
+Challenges of switching processes  
+Process as an abstraction  
+Executable represents initial state  
+Operating system defines process  
+Control flow and memory layout  
+Focus on control flow  
+CPU scheduling  
+Concurrent execution of processes  
+Handling additional processes  
+Multiplexing as resource sharing  
+Foreground and background processes  
+Need for process switching  
+Naive solution of sequential processes  
+Necessity for simultaneous execution  
+Multiplexing the CPU  
+State or context of process  
+Process metadata in memory  
+Context switch  
+Steps in context switch  
+State of registers stored  
+Cooperative scheduling  
+Preemptive scheduling  
+Round-robin scheduling  
+Fairness in scheduling  
+Resource allocation fairness  
+Tweaking round-robin schedulers  
+Quantum in scheduling  
+Combining round-robin with priority  
+Two queues in scheduling  
+Hybrid approaches to scheduling  
+Human perception of concurrency  
+Reality versus illusion of concurrency  
+No optimal scheduling  
+Hardware interrupts  
+Interrupts as context switching mechanism  
+Hardware supports interrupts  
+Exceptional states diverting execution  
+System calls as interrupts  
+Typical UNIX/Linux system calls  
+Predictable, intentional interrupts  
+Synchronous interrupts  
+Asynchronous interrupts  
+Interrupt vector table  
+Interrupt handling  
+Categories of interrupts  
+Essential for operating systems  

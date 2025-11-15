@@ -1,0 +1,6 @@
+Turing Machine / TM
+#
+Recognize(s)
+Decide(s)
+State diagram
+Tape head

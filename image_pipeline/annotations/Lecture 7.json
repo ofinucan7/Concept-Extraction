@@ -1,0 +1,209 @@
+{
+  "deck": "Lecture 7",
+  "batches": [
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "per_slide": {
+        "1": [
+          "This slide introduces Lecture 7 of the course CS 0007: Introduction to Java, presented by Nathan Ong at the University of Pittsburgh."
+        ],
+        "2": [
+          "The focus of this slide is on the concept of functions in programming."
+        ],
+        "3": [
+          "A function is described as being similar to its mathematical counterpart, with an example provided using the function f(x) = x\u00b2."
+        ],
+        "4": [
+          "Java functions are explained as taking zero or more parameters, processing them in the function body, and returning a result."
+        ],
+        "5": [
+          "The slide discusses how to call functions in Java, differentiating between static and non-static methods."
+        ]
+      },
+      "sentences": [
+        "This slide introduces Lecture 7 of the course CS 0007: Introduction to Java, presented by Nathan Ong at the University of Pittsburgh.",
+        "The focus of this slide is on the concept of functions in programming.",
+        "A function is described as being similar to its mathematical counterpart, with an example provided using the function f(x) = x\u00b2.",
+        "Java functions are explained as taking zero or more parameters, processing them in the function body, and returning a result.",
+        "The slide discusses how to call functions in Java, differentiating between static and non-static methods."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sentences": [],
+      "gold_coverage": {},
+      "raw_text": "Gave up after repeated rate limit errors. :: {\n  \"deck\": \"CS 0007: Introduction to Java Lecture 7\",\n  \"batch_slides\": [1, 2, 3, 4, 5],\n  \"per_slide\": {\n    \"1\": [\"This slide introduces Lecture 7 of the course CS 0007: Introduction to Java, presented by Nathan Ong at the University of Pittsburgh.\"],\n    \"2\": [\"The focus of this slide is on the concept of functions in programming.\"],\n    \"3\": [\"A function is described as being similar to its mathematical counterpart, with an example provided using the function f(x) = x\u00b2.\"],\n    \"4\": [\"Java functions are explained as taking zero or more parameters, processing them in the function body, and returning a result.\"],\n    \"5\": [\"The slide discusses how to call functions in Java, differentiating between static and non-static methods.\"]\n  },\n  \"sentences\": [\n    \"This slide introduces Lecture 7 of the course CS 0007: Introduction to Java, presented by Nathan Ong at the University of Pittsburgh.\",\n    \"The focus of this slide is on the concept of functions in programming.\",\n    \"A function is described as being similar to its mathematical counterpart, with an example provided using the function f(x) = x\u00b2.\",\n    \"Java functions are explained as taking zero or more parameters, processing them in the function body, and returning a result.\",\n    \"The slide discusses how to call functions in Java, differentiating between static and non-static methods.\"\n  ]\n}"
+    },
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "per_slide": {
+        "11": [
+          "The slide introduces the concept of parameters, which are the required input to a function.",
+          "It explains that parameters are the data needed for a function to execute its duties."
+        ],
+        "12": [
+          "The slide presents a function header for a method that sums two doubles together.",
+          "It specifies the method name 'sumDoubles' and the parameters 'addend1' and 'addend2'."
+        ],
+        "13": [
+          "The slide discusses the function body, indicating that it will contain the logic for the function.",
+          "It emphasizes the importance of the function header within the body."
+        ],
+        "14": [
+          "The slide shows a completed function body that calculates the sum of 'addend1' and 'addend2'.",
+          "It demonstrates the declaration of a variable 'sum' to store the result before returning it."
+        ],
+        "15": [
+          "The slide presents an alternative way to write the function body by directly returning the sum of 'addend1' and 'addend2'.",
+          "It concludes with a comment indicating the end of the method."
+        ]
+      },
+      "sentences": [
+        "The slide introduces the concept of parameters, which are the required input to a function.",
+        "It explains that parameters are the data needed for a function to execute its duties.",
+        "The slide presents a function header for a method that sums two doubles together.",
+        "It specifies the method name 'sumDoubles' and the parameters 'addend1' and 'addend2'.",
+        "The slide discusses the function body, indicating that it will contain the logic for the function.",
+        "It emphasizes the importance of the function header within the body.",
+        "The slide shows a completed function body that calculates the sum of 'addend1' and 'addend2'.",
+        "It demonstrates the declaration of a variable 'sum' to store the result before returning it.",
+        "The slide presents an alternative way to write the function body by directly returning the sum of 'addend1' and 'addend2'.",
+        "It concludes with a comment indicating the end of the method."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "per_slide": {
+        "16": [
+          "The slide presents a code snippet that defines a public class named Functions, which includes a main method that calls a function named sumDoubles with two double values."
+        ],
+        "17": [
+          "This slide shows another code snippet for a public class called AddingMachine, which prompts the user to enter two numbers and calculates their sum using the sumDoubles function."
+        ],
+        "18": [
+          "The slide poses questions regarding the necessity of submitting firstNum and secondNum to the sumDoubles function and discusses the concept of scope in programming."
+        ],
+        "19": [
+          "This slide visually represents the concept of scope with a layered diagram, illustrating different levels of confidentiality such as Confidential, Secret, and Top Secret."
+        ],
+        "20": [
+          "The final slide provides a diagram that outlines the structure of the AddingMachine class, highlighting the main method and the sumDoubles method within the class."
+        ]
+      },
+      "sentences": [
+        "The slide presents a code snippet that defines a public class named Functions, which includes a main method that calls a function named sumDoubles with two double values.",
+        "This slide shows another code snippet for a public class called AddingMachine, which prompts the user to enter two numbers and calculates their sum using the sumDoubles function.",
+        "The slide poses questions regarding the necessity of submitting firstNum and secondNum to the sumDoubles function and discusses the concept of scope in programming.",
+        "This slide visually represents the concept of scope with a layered diagram, illustrating different levels of confidentiality such as Confidential, Secret, and Top Secret.",
+        "The final slide provides a diagram that outlines the structure of the AddingMachine class, highlighting the main method and the sumDoubles method within the class."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "per_slide": {
+        "21": [
+          "The slide introduces the concept of Passing-in Parameters, which refers to the act of providing parameters in a function call.",
+          "It notes that Java has two kinds of passing-in."
+        ],
+        "22": [
+          "The slide explains Pass-by-Value, which involves passing in a copy of the value of the variable.",
+          "It states that any change made to the variable is not reflected when the function returns and that all primitive type parameters are pass-by-value."
+        ],
+        "23": [
+          "The slide discusses Pass-by-Reference, which involves passing in the actual variable.",
+          "It highlights that any change made to the variable is reflected when the function returns, unless the parameter name is reassigned, and that all non-primitive type parameters are pass-by-reference."
+        ],
+        "24": [
+          "The slide presents a simple function requirement, stating the desire for a function that prints a nice British greeting, complete with the person's full name.",
+          "It includes a source link for further reference."
+        ],
+        "25": [
+          "The slide outlines the components of a function, including public, static, return type, function name, parameters in parentheses, and the function body with curly brackets.",
+          "It poses questions regarding the return type and what to return in the function body."
+        ]
+      },
+      "sentences": [
+        "The slide introduces the concept of Passing-in Parameters, which refers to the act of providing parameters in a function call.",
+        "It notes that Java has two kinds of passing-in.",
+        "The slide explains Pass-by-Value, which involves passing in a copy of the value of the variable.",
+        "It states that any change made to the variable is not reflected when the function returns and that all primitive type parameters are pass-by-value.",
+        "The slide discusses Pass-by-Reference, which involves passing in the actual variable.",
+        "It highlights that any change made to the variable is reflected when the function returns, unless the parameter name is reassigned, and that all non-primitive type parameters are pass-by-reference.",
+        "The slide presents a simple function requirement, stating the desire for a function that prints a nice British greeting, complete with the person's full name.",
+        "It includes a source link for further reference.",
+        "The slide outlines the components of a function, including public, static, return type, function name, parameters in parentheses, and the function body with curly brackets.",
+        "It poses questions regarding the return type and what to return in the function body."
+      ],
+      "gold_coverage": {}
+    },
+    {
+      "deck": "Lecture 7",
+      "batch_slides": [
+        26,
+        27,
+        28
+      ],
+      "per_slide": {
+        "26": [
+          "The slide discusses the return type of a function, questioning whether it needs to return any data or information.",
+          "It concludes that the function should use 'void' as its return type."
+        ],
+        "27": [
+          "This slide presents a function header for a method named 'britishGreeting' that takes a parameter 'fullName'.",
+          "The function is defined as 'public static void', indicating it does not return a value."
+        ],
+        "28": [
+          "The slide shows the function body for 'britishGreeting', which prints a greeting message using the 'fullName' parameter.",
+          "It emphasizes that there is no return statement in the method."
+        ]
+      },
+      "sentences": [
+        "The slide discusses the return type of a function, questioning whether it needs to return any data or information.",
+        "It concludes that the function should use 'void' as its return type.",
+        "This slide presents a function header for a method named 'britishGreeting' that takes a parameter 'fullName'.",
+        "The function is defined as 'public static void', indicating it does not return a value.",
+        "The slide shows the function body for 'britishGreeting', which prints a greeting message using the 'fullName' parameter.",
+        "It emphasizes that there is no return statement in the method."
+      ],
+      "gold_coverage": {}
+    }
+  ]
+}

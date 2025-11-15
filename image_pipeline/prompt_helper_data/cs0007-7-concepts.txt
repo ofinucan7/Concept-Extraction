@@ -1,0 +1,16 @@
+function(s)
+parameter(s)
+function body
+return(s)
+function header
+function name
+header
+return type
+scope
+passing-in
+pass-by-value
+pass-by-reference
+void
+variable(s)
+Primitive
+Public
