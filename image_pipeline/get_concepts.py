@@ -32,11 +32,11 @@ SYSTEM_MSG = "You are a helpful assistant that follows the user instructions exa
 # --------------------------------------------------------
 # helpers
 
-def find_deck_jsons(root: Path) -> List[Path]:
+def find_deck_jsons(root):
     return sorted([p for p in root.glob("*.json") if p.is_file()])
 
 
-def gather_sentences(deck_obj: Dict[str, Any]) -> List[str]:
+def gather_sentences(deck_obj):
     out: List[str] = []
     for b in deck_obj.get("batches", []):
         if isinstance(b, dict) and "sentences" in b and isinstance(b["sentences"], list):
@@ -60,7 +60,7 @@ def gather_sentences(deck_obj: Dict[str, Any]) -> List[str]:
 # --------------------------------------------------------
 # backoff
 
-def with_backoff(call_fn, *args, **kwargs) -> str:
+def with_backoff(call_fn, *args, **kwargs):
     delay = 1.0
     for attempt in range(MAX_RETRIES):
         try:
@@ -80,7 +80,7 @@ def with_backoff(call_fn, *args, **kwargs) -> str:
     raise RuntimeError("Gave up after repeated rate limit errors.")
 
 
-def call_model_chat_api(client: OpenAI, model: str, prompt_text: str) -> str:
+def call_model_chat_api(client, model, prompt_text):
     """Simple chat call (no JSON mode) used by with_backoff."""
     messages = [
         {"role": "system", "content": SYSTEM_MSG},
@@ -95,7 +95,7 @@ def call_model_chat_api(client: OpenAI, model: str, prompt_text: str) -> str:
     return resp.choices[0].message.content
 
 
-def call_model_responses_api(client: OpenAI, model: str, prompt_text: str) -> str:
+def call_model_responses_api(client, model, prompt_text):
     resp = client.responses.create(
         model=model,
         input=[
