@@ -1,0 +1,17 @@
+scanner
+object
+input stream
+string
+primitive
+constructor
+system.in
+import
+java.util.Scanner
+function
+parameter
+function header
+function body
+visibility type
+return type
+static
+return value

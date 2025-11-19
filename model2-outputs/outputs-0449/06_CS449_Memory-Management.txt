@@ -1,0 +1,41 @@
+memory management
+memory layout
+code
+static data
+stack
+heap
+dynamic memory allocation
+malloc
+calloc
+virtual memory
+fragmentation
+defragmentation
+pointer
+array
+linked list
+node
+head
+tail
+linked list traversal
+linked list append
+linked list delete
+doubly linked list
+binary tree
+buddy allocator
+internal fragmentation
+first-fit
+next-fit
+best-fit
+linked list node
+explicit list allocator
+free block
+allocated block
+metadata
+coalescing
+header metadata
+free function
+implicit list
+boundary tag
+segmentation fault
+page
+slab allocator

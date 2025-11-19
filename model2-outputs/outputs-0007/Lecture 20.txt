@@ -1,0 +1,28 @@
+scanner  
+token  
+nextLine  
+reading  
+reader  
+system.in  
+inputstream  
+inputstreamreader  
+bufferedreader  
+exception  
+checked exception  
+unchecked exception  
+IOException  
+ArrayIndexOutOfBoundsException  
+try block  
+catch block  
+numberformatexception  
+integer  
+integer wrapper class  
+primitive  
+file  
+filereader  
+filenotfoundexception  
+writing  
+writer  
+getInput  
+writeOutput  
+inputandoutput

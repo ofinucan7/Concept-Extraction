@@ -1,0 +1,20 @@
+function
+function header
+function body
+visibility type
+return type
+function name
+parameter
+curly bracket
+return statement
+function overloading
+constructor
+main function
+if statement
+boolean condition
+boolean variable
+assignment
+comparison
+equals method
+else if statement
+boolean operator

@@ -1,0 +1,38 @@
+calling convention
+caller
+callee
+stack frame
+frame pointer
+stack pointer
+return address
+prologue
+epilogue
+block statement
+local variable
+global variable
+expression evaluation
+saved register
+temporary register
+abstract syntax tree
+register allocation
+control flow statement
+conditional statement
+loop statement
+lazy operator
+short-circuiting
+boolean variable
+array
+array allocation
+array access
+array length
+lexer token
+parser rule
+array type
+typing rule
+evaluation rule
+runtime error
+heap allocation
+memory representation
+runtime library
+rt$new_array
+code generation

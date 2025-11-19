@@ -1,0 +1,32 @@
+global optimization
+local optimization
+copy propagation
+dead store elimination
+basic block
+control flow graph
+constant folding
+data flow analysis
+visited set
+termination
+unvisited set
+visited set
+control flow optimization
+unreachable basic block
+forward analysis
+backward analysis
+global constant copy propagation
+def
+use
+def-use
+static single assignment
+transfer function
+state
+any state
+constant state
+unknown state
+join function
+equilibrium
+liveness
+live variable
+live range
+register allocation

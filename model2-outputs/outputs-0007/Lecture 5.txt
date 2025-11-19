@@ -1,0 +1,11 @@
+string
+application programming interface
+API
+charAt method
+substring
+index
+zero-based indexing
+math class
+exponentiation
+Math.pow method
+static method

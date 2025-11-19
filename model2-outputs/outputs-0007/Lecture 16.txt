@@ -1,0 +1,28 @@
+object-oriented programming
+class
+instance variable
+method
+constructor
+constructor overloading
+getter
+setter
+inter-class relationship
+subclass
+superclass
+extends
+object class
+inheritance
+super
+protected
+vehicle class
+move method
+car class
+drive method
+constructor inheritance
+superclass constructor
+override
+@Override annotation
+ownership
+garage class
+addVehicle method
+main method

@@ -1,0 +1,58 @@
+c
+the c programming language
+memory management
+parallelism
+compiled language
+machine code
+bytecode
+interpreter
+compiler
+object file
+linking
+assembly
+gcc
+java virtual machine
+just-in-time compilation
+jit compilation
+function-oriented programming
+object-oriented programming
+function
+class
+abstract data type
+malloc
+free
+garbage collection
+comment
+preprocessor
+main function
+void
+variable declaration
+casting
+sizeof
+size_t
+constant
+enumeration
+operator
+augmented operator
+expression
+control flow
+boolean expression
+stdbool.h
+if statement
+loop
+while loop
+do-while loop
+for loop
+continue statement
+break statement
+switch statement
+case
+default case
+fall-through
+struct
+typedef
+enum
+class instantiation
+undefined variable
+stack
+memory

@@ -1,0 +1,51 @@
+typing
+type theory
+type
+int
+type safety
+progress
+preservation
+type error
+undefined behavior
+decidability
+type-checking
+halting problem
+runtime type
+type system
+problem domain
+primitive type
+static typing
+dynamic typing
+subtyping
+virtual method
+existential polymorphism
+type coercion
+type conversion
+strong typing
+weak typing
+typing alignment chart
+type inference
+term
+value
+term type notation
+inference rule
+axiomatic rule
+type context
+name resolution
+symbol table
+truss type system
+bool
+string
+void
+function type
+type constructor
+higher order function
+arithmetic operation
+string concatenation
+comparison operation
+logical operation
+function call
+statement
+abstract syntax tree
+AST
+type checking

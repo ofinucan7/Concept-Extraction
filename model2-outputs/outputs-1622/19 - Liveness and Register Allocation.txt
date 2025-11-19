@@ -1,0 +1,39 @@
+liveness algorithm
+backwards analysis
+before state
+after state
+dead state
+live state
+transfer function
+join function
+control flow graph
+basic block
+termination
+diamond control flow graph
+loop control flow graph
+bit vector problem
+register allocation
+local variable
+memory access
+RISC ISA
+MIPS ABI
+a register
+v register
+t register
+s register
+register pressure
+register interference graph
+node
+edge
+graph coloring
+color
+k-colorable
+chromatic number
+NP-complete
+heuristic
+stack
+pop and color
+spilling
+live range
+coalescing
+pre-coloring

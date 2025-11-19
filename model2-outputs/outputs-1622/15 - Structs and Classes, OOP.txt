@@ -1,0 +1,42 @@
+struct
+class
+object-oriented programming
+structured type
+primitive type
+array
+tuple
+heterogeneous type
+unit
+void
+named constant
+record type
+structural identity
+nominal identity
+value type
+reference type
+null
+bottom type
+runtime representation
+memory layout
+alignment
+padding
+runtime library function
+field offset
+method
+static dispatch
+constructor
+data inheritance
+method inheritance
+subtype
+base type
+virtual method
+dynamic dispatch
+run-time type identification
+RTTI
+virtual method table
+vtable
+indirect function call
+interface
+access modifier
+static variable
+nullable reference type

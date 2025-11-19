@@ -1,0 +1,46 @@
+object-oriented programming
+class
+instance variable
+method
+constructor
+inter-class relationship
+subclass
+superclass
+ownership
+automotive shop
+customer
+car
+service quote
+make
+model
+year
+estimated parts charge
+estimated labor charge
+sales tax
+total estimated charge
+object class
+toString method
+string representation
+functional responsibility
+shop
+mechanic
+scanner
+buffering quirk
+reading
+reader
+system.in
+input stream
+input stream reader
+buffered reader
+exception
+throw exception
+catch exception
+checked exception
+unchecked exception
+ioexception
+arrayindexoutofboundsexception
+try block
+catch block
+finally block
+numberformatexception
+integer class

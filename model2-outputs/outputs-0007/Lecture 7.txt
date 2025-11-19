@@ -1,0 +1,22 @@
+function
+mathematical function
+java function
+parameter
+function body
+function header
+visibility type
+return type
+function name
+parentheses
+curly bracket
+return statement
+double
+sumDoubles
+scope
+passing-in
+pass-by-value
+pass-by-reference
+void
+britishGreeting
+string
+scanner

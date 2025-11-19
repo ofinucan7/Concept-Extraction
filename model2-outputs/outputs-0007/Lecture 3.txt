@@ -1,0 +1,31 @@
+primitive type
+string
+primitive value
+boolean
+byte
+char
+double
+float
+int
+long
+short
+variable declaration
+type name = value
+true
+false
+character
+decimal number
+integer
+casting
+float suffix
+ascii
+nan
+boolean operator
+logical and
+logical or
+logical not
+truth table
+order of operators
+conditional logic
+implication
+equivalent statement

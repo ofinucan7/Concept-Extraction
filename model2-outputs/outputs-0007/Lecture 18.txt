@@ -1,0 +1,29 @@
+object-oriented programming
+class
+class-level variable
+instance variable
+method
+constructor
+inter-class relationship
+subclass
+superclass
+ownership
+automotive shop
+customer
+car
+service quote
+manager
+make
+model
+year
+estimated parts charge
+estimated labor charge
+sales tax
+total estimated charge
+simple property
+object class
+toString()
+string representation
+responsibility assignment
+shop
+mechanic

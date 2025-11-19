@@ -1,0 +1,47 @@
+introduction to systems software
+the ansi c programming language
+k&r style
+computer systems a programmer’s perspective
+lecture
+recitation
+programming assignment
+exam
+thoth machine
+late day
+late penalty
+grading
+disability resources
+academic integrity
+cheating
+teaching pedagogy
+c programming language
+x86 assembly
+calling convention
+interactive debugging
+data representation
+abstraction
+systems design
+operating system
+file system
+program analysis
+debugging tool
+system protocol
+trade-off
+research conference
+sosp
+osdi
+eurosys
+hotos
+unikernel
+c programming
+unix
+memory model
+execution environment
+operating system writing
+linux
+device driver
+python interpreter
+realtime art
+demoscene
+debugger
+software reverse-engineering

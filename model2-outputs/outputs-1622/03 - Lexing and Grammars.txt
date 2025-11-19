@@ -1,0 +1,53 @@
+lexing  
+scanning  
+source code  
+token  
+lexer  
+whitespace  
+comment  
+string literal  
+indentation  
+location information  
+line number  
+column number  
+parsing  
+toy language  
+truss  
+keyword  
+identifier  
+symbol  
+literal  
+float  
+string  
+grammar  
+language  
+alphabet  
+terminal  
+nonterminal  
+metalanguage  
+sequencing  
+alternation  
+repetition  
+optional element  
+grouping  
+unicode  
+symbol token  
+keyword token  
+identifier token  
+digit  
+alphabetic  
+integer literal  
+string literal  
+strchar  
+comment  
+lookahead  
+token  
+program  
+compiler compiler  
+ambiguity  
+maximal munch  
+parser  
+template  
+semantic analysis  
+rust_match  
+lexing_toy

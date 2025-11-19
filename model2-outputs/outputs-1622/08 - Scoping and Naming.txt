@@ -1,0 +1,33 @@
+scoping  
+naming  
+semantic analysis  
+name-checking  
+scope  
+symbol table  
+symbol  
+declaration  
+referent  
+scope tree  
+abstract syntax tree  
+AST  
+parent scope  
+child scope  
+bidirectional link  
+name resolution  
+use  
+use map  
+forward reference  
+local variable  
+unique identifier  
+name context  
+declaration map  
+name checking  
+type checking  
+rust  
+box pointer  
+rc pointer  
+memory safety  
+multithreaded code  
+symbol object  
+scope vector  
+name context

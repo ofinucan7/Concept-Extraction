@@ -1,0 +1,114 @@
+network programming
+client-server model
+server process
+client process
+network host
+cpu chip
+register file
+alu
+system bus
+memory bus
+main memory
+i/o bridge
+i/o bus
+usb controller
+graphics adapter
+disk controller
+network adapter
+network
+system area network
+san
+local area network
+lan
+wide area network
+wan
+internetwork
+internet
+global ip internet
+router
+internet protocol
+protocol software
+internet address
+packet
+header
+payload
+tcp/ip protocol family
+ip
+udp
+tcp
+sockets interface
+tcp/ip
+user code
+kernel code
+ip address
+internet domain name
+domain naming system
+dns
+nslookup
+localhost
+loopback address
+hostname
+connection
+socket
+socket address
+port
+ephemeral port
+well-known port
+well-known service name
+socket descriptor
+socket programming
+echo server
+echo client
+listen
+connect
+accept
+read system call
+write system call
+listening descriptor
+connected descriptor
+telnet
+hypertext transfer protocol
+http
+http request
+http response
+mime type
+static content
+dynamic content
+url
+universal resource locator
+http method
+uri
+uniform resource identifier
+http version
+request header
+response header
+status code
+status message
+proxy
+proxy cache
+sockets interface functions
+socket function
+bind function
+listen function
+accept function
+connect function
+open_clientfd
+open_listenfd
+tiny web server
+serve_static
+cgi
+common gateway interface
+cgi program
+query_string
+dup2
+execve
+ipv4
+ipv6
+generic socket address
+struct sockaddr
+sockaddr_in
+getaddrinfo
+addrinfo struct
+freeaddrinfo
+gai_strerror
+getnameinfo

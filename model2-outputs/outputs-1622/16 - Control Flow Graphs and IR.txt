@@ -1,0 +1,26 @@
+control flow graph
+CFG
+intermediate representation
+IR
+abstract syntax tree
+AST
+control flow analysis
+data flow analysis
+flowchart
+basic block
+instruction
+local
+temporary
+place
+constant
+source
+terminator
+return terminator
+goto terminator
+conditional terminator
+entry point
+lowering
+code generation
+postorder traversal
+depth-first traversal
+back edge

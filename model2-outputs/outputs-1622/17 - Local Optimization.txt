@@ -1,0 +1,26 @@
+local optimization
+optimization
+resource utilization
+common subexpression elimination
+constant folding
+strength reduction
+intermediate representation
+abstract syntax tree
+local optimization
+basic block
+global optimization
+control flow graph
+interprocedural optimization
+dead code elimination
+static final variable
+function inlining
+program behavior
+side effect
+peephole optimization
+operation
+move
+algebraic simplification
+single static assignment form
+SSA
+copy propagation
+dead store elimination

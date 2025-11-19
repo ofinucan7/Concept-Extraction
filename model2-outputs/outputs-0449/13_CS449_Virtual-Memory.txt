@@ -1,0 +1,30 @@
+virtual memory
+address space
+code segment
+data segment
+stack
+kernel memory
+random access memory
+dynamic RAM
+physical addressing
+multitasking operating system
+indirection
+segmentation
+segment
+segment table
+memory management unit
+MMU
+segmentation fault
+access control
+page
+paging
+page table
+page fault
+process isolation
+context switch
+page index
+page offset
+inverted page table
+process identifier
+multi-level page table
+page size

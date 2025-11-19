@@ -1,0 +1,54 @@
+application binary interface
+ABI
+language ABI
+operating system ABI
+architectural ABI
+instruction set architecture
+function call
+object file format
+embedded device
+operating system
+system call
+asynchronous message
+executable
+shared library
+memory layout
+high-level language
+exception
+dynamic method dispatch
+function closure
+method call
+calling convention
+stack
+stack pointer
+stack overflow
+argument passing
+return address
+CPU register
+callee
+caller
+stack frame
+local variable
+frame pointer
+function prologue
+function epilogue
+standard library
+runtime library
+string concatenation
+heap
+global variable
+boolean
+string literal
+reference type
+zero-terminated ASCII
+function pointer
+struct reference
+MIPS ABI
+MARS
+.data segment
+tracing garbage collector
+system call
+native function
+Java virtual machine
+plugin
+Visual C++ Redistributable

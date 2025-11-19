@@ -1,0 +1,47 @@
+advanced typing
+polymorphism
+abstraction
+subclass
+interface
+trait
+generic
+template
+function overloading
+operator overloading
+union
+void pointer
+duck typing
+late binding
+arraylist
+class hierarchy
+ad-hoc polymorphism
+symbol table
+implicit type conversion
+name mangling
+subtype polymorphism
+base type
+object type
+java interface
+multiple interface implementation
+subtype relation
+type checking
+dynamic dispatch
+virtual method table
+vtable
+trait object
+parametric polymorphism
+static dispatch
+dynamic dispatch
+universal quantification
+turbofish operator
+monomorphization
+java generic
+bounded quantification
+existential type
+extends keyword
+partialord trait
+runtime error
+function overload
+generics
+template
+type system

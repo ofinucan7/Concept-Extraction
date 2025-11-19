@@ -1,0 +1,17 @@
+java  
+harmonic series  
+array  
+array syntax  
+array initializer  
+array length  
+element  
+while loop  
+for loop  
+increment operator  
+decrement operator  
+mathematical combination operator  
++= operator  
+++ operator  
+-= operator  
+%= operator  
+currElement

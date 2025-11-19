@@ -1,0 +1,17 @@
+if statement  
+boolean condition  
+if-block  
+else if statement  
+else statement  
+ternary operator  
+choice operator  
+scope  
+curly bracket  
+variable scope  
+code readability  
+code optimization  
+conditional execution  
+nested scope  
+concatenation  
+comment  
+trade-off

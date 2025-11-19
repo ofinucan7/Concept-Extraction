@@ -1,0 +1,33 @@
+memory model
+byte-addressable memory
+memory layout
+code section
+static data
+heap
+stack
+dynamic memory
+pointer
+memory address
+dereference operator
+reference operator
+pointer arithmetic
+array
+stack allocation
+heap allocation
+string
+string literal
+sentinel value
+strlen
+strnlen
+strcmp
+strncpy
+strncat
+malloc
+calloc
+free
+scanf
+printf
+structure
+typedef
+NULL pointer
+realloc

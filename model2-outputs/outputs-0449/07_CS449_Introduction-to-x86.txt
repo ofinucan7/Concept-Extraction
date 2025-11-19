@@ -1,0 +1,36 @@
+x86 assembly
+assembly language
+machine code
+cpu
+mips
+risc
+cisc
+instruction set architecture
+isa
+register
+general-purpose register
+partial register
+program counter
+status register
+carry flag
+overflow flag
+immediate
+memory address
+displacement
+load effective address
+lea
+instruction qualifier
+quad word
+long word
+word
+hello world program
+c application binary interface
+c abi
+gcc
+clang
+objdump
+disassembly
+debugging tool
+gdb
+ida pro
+radare

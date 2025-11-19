@@ -1,0 +1,39 @@
+fork
+fork()
+process
+child process
+parent process
+process id
+pid
+memory layout
+process state
+cpu state
+system call
+concurrency
+wait()
+waitpid()
+exit()
+exit code
+zombie process
+orphan process
+exec family
+execv()
+execve()
+execvp()
+execvpe()
+execlp()
+init task
+shell
+inter-process communication
+ipc
+message passing
+signal
+sigint
+sigkill
+sigsegv
+sigchld
+sigusr1
+kill command
+signal() function
+race condition
+critical section

@@ -1,0 +1,51 @@
+thread  
+process  
+concurrency  
+process-level concurrency  
+threading API  
+C11  
+pthread  
+Portable Operating System Interface  
+POSIX  
+fork  
+process memory  
+process state  
+process ID  
+memory layout  
+stack  
+.bss  
+.data  
+.text  
+CPU state  
+register  
+virtual address space  
+page table  
+thread function  
+pthread_create  
+pthread_join  
+race condition  
+synchronization  
+critical section  
+semaphore  
+semaphore counter  
+up operation  
+down operation  
+V operation  
+P operation  
+sem_init  
+sem_wait  
+sem_post  
+mutex  
+mutual exclusion  
+pthread_mutex_init  
+pthread_mutex_lock  
+pthread_mutex_unlock  
+resource contention  
+deadlock  
+starvation  
+livelock  
+tie-breaking scheme  
+thread ID  
+pthread_self  
+pthread_cancel  
+pthread_exit

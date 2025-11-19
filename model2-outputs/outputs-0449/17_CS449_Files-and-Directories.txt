@@ -1,0 +1,61 @@
+file  
+data  
+binary file  
+text file  
+file format  
+ELF  
+magic number  
+PRONOM database  
+C standard IO  
+fopen  
+fread  
+fwrite  
+fseek  
+ftell  
+unix system call  
+open  
+read  
+write  
+lseek  
+close  
+socket  
+named pipe  
+directory  
+volatile memory  
+persistent memory  
+NVRAM  
+floppy disk  
+magnetic material  
+amplitude modulation  
+frequency modulation  
+magnetic flux  
+modified-FM encoding  
+disk drive  
+hard disk  
+platter  
+cylinder  
+track  
+sector  
+access time  
+seek time  
+latency  
+file system  
+file metadata  
+access control  
+stat system call  
+file descriptor  
+stdin  
+stdout  
+stderr  
+file table  
+inode  
+WAFL  
+snapshot  
+hierarchical file system  
+absolute path  
+symbolic link  
+directory entry  
+parent directory  
+tag  
+POSIX  
+distributed file system

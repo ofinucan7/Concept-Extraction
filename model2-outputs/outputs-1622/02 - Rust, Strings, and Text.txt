@@ -1,0 +1,46 @@
+rust
+vec
+vector
+immutable vector
+mutable vector
+indexing
+length
+push
+iteration
+iter method
+for-in loop
+range
+enumerate
+mapping
+function literal
+anonymous function
+lambda
+algebraic data type
+primitive type
+product type
+sum type
+struct
+tuple
+field
+impl
+constructor
+method
+associated function
+mutator
+enum
+pattern matching
+option
+some
+none
+string
+unicode
+codepoint
+combining mark
+utf-8
+utf-16
+utf-32
+byte
+grapheme cluster
+lexing
+ascii
+canonicalization

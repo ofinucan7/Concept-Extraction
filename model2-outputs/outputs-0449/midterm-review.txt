@@ -1,0 +1,37 @@
+systems software
+data representation
+two’s complement
+unsigned integer
+sign bit
+floating point
+denormalized number
+normalized number
+special value
+biased exponent
+significand
+bias
+single precision
+double precision
+not-a-number
+infinity
+casting
+pointer
+segmentation fault
+bitwise operation
+masking
+byte ordering
+big endian
+little endian
+malloc
+calloc
+free
+memory leak
+stack
+x86-64
+register
+calling convention
+procedure call
+return address
+stack frame
+assembly
+recursion

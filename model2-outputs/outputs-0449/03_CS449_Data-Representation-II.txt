@@ -1,0 +1,26 @@
+bit manipulation
+bitwise operation
+not operation
+truth table
+and operation
+or operation
+xor operation
+bit shifting
+left shift
+right shift
+shift right logical
+shift right arithmetic
+bit bucket
+fixed-point representation
+floating point
+scientific notation
+normalized scientific notation
+ieee 754
+significand
+exponent
+biased notation
+bias constant
+single-precision floating point
+double-precision floating point
+half-precision floating point
+sign-magnitude representation

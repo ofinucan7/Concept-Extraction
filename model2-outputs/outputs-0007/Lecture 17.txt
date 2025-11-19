@@ -1,0 +1,24 @@
+object-oriented programming
+class
+class-level variable
+instance variable
+method
+constructor
+inter-class relationship
+subclass
+superclass
+extends
+object class
+inheritance
+super keyword
+protected
+constructor inheritance
+overriding
+override annotation
+ownership
+property
+vehicle
+car
+garage
+service quote
+simple property

@@ -1,0 +1,36 @@
+investigating the code
+systems software
+c application binary interface
+abi
+assembly convention
+x86-64 linux c abi
+register
+stack
+callee
+return value
+activation frame
+temporary data
+stack address
+function
+local variable
+push instruction
+pop instruction
+ret instruction
+control flow
+cmp instruction
+test instruction
+conditional jump
+program counter
+flags
+alu
+sign flag
+overflow flag
+zero flag
+carry flag
+two's complement math
+operand order
+negate condition
+jne instruction
+je instruction
+function call
+callq instruction

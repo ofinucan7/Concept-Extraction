@@ -1,0 +1,40 @@
+bottom-up parsing
+abstract syntax tree
+order of operations
+parentheses
+operator precedence
+operator associativity
+left-associative operator
+right-associative operator
+non-associative operator
+binary operator
+unary operator
+postfix operator
+primary expression
+literal
+identifier
+parenthesized expression
+term
+unary operator (unaryop)
+postfix operator (postfixop)
+call operator (callop)
+field operator (fieldop)
+index operator (indexop)
+expression grammar
+recursive-descent parser
+expression
+binary operator (binaryop)
+left-branching
+right-branching
+implicit parentheses
+recursion
+loop
+auxiliary stack
+operator stack
+operand stack
+generalized bottom-up parsing
+top-down parsing
+hybrid parsing
+recursive descent
+syntactic sugar
+desugaring

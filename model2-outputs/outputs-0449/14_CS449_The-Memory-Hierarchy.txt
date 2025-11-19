@@ -1,0 +1,47 @@
+memory hierarchy
+throughput
+dram
+disk
+register
+l1 cache
+l2 cache
+main memory
+local disk
+distributed storage
+tape
+cache
+cpu cache
+cache hit
+cache miss
+compulsory miss
+cold miss
+capacity miss
+conflict miss
+temporal locality
+spatial locality
+cache slot
+direct-mapped cache
+fully associative cache
+associative cache
+n-way associative cache
+cache line
+cache block
+block size
+miss penalty
+hit rate
+miss rate
+hit time
+average memory access time
+amat
+cache layout
+cache set
+cache tag
+set index
+offset
+virtual address
+virtual page number
+page offset
+physical address
+physical page number
+cache bin
+cache way

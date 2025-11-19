@@ -1,0 +1,62 @@
+linker
+compiler
+source code
+object file
+machine code
+executable
+external library
+assembly language
+preprocessor
+compiler optimization
+operator precedence
+operator associativity
+shared library
+executable and linkable format
+ELF
+object file header
+text segment
+data segment
+relocation table
+symbol table
+debugging information
+non-local label
+static data
+segment header
+function symbol
+global variable
+special section
+static keyword
+extern keyword
+global variable
+local symbol
+global symbol
+static library
+archive file
+loader
+memory segment
+code segment
+data segment
+read-only data segment
+uninitialized data segment
+.bss segment
+stack
+heap
+dynamic linking
+relocatable code
+procedure linkage table
+position independent code
+position independent executable
+shared library
+dynamic loading
+dlopen
+dlsym
+readelf
+ldd
+software license
+GNU
+GNU public license
+GPL
+copyleft license
+system call
+device driver
+proprietary code

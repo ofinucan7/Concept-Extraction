@@ -1,0 +1,41 @@
+top-down parsing
+parsing
+grammar
+expression
+derivation
+abstract syntax tree
+ast
+lisp
+token
+rust
+result type
+ok constructor
+err constructor
+match expression
+question mark operator
+recursive descent parser
+context-free grammar
+parse_exp function
+parse_parens function
+parens rule
+sequencing
+alternation
+repetition
+optional
+struct
+enum
+array
+vector
+option type
+parseerror
+parser
+lexer
+limits of recursive descent
+expression ambiguity
+operator precedence
+backtracking
+error reporting
+error recovery
+location information
+error message
+error context

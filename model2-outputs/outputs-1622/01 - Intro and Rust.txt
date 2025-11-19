@@ -1,0 +1,76 @@
+intro and rust
+course info
+office hours
+disability resources and services
+canvas
+discord
+email
+textbook
+grading
+project
+exam
+teaching philosophy
+academic integrity
+function
+language
+human language
+computer language
+declarative language
+programming language
+interchange format
+binary file format
+network protocol
+program
+proof
+curry-howard correspondence
+proof language
+proof assistant
+cpu
+machine code
+assembly language
+high-level language
+abstraction
+compiler
+source language
+target language
+transpiler
+recompiler
+decompiler
+ahead-of-time compiler
+just-in-time compiler
+frontend
+backend
+intermediate representation
+lexical analysis
+token
+syntactic analysis
+grammar
+abstract syntax tree
+semantic analysis
+type checking
+optimization
+code generation
+grammar
+abstract syntax tree
+type theory
+type system
+static typing
+dynamic typing
+strong typing
+weak typing
+parametric type
+generic
+runtime representation
+memory management
+application binary interface
+linking
+rust
+rustup
+cargo
+crate
+crates.io
+fizzbuzz program
+vector
+iterator
+ownership
+borrowing

@@ -1,0 +1,78 @@
+java
+java se 8u102
+computer
+cpu
+memory
+ram
+input/output controller
+input/output device
+abacus
+logarithm
+difference engine
+charles babbage
+analytical engine
+punch card
+variable card
+operational card
+ada lovelace
+first computer program
+at&t
+unix
+c programming language
+xerox
+vacuum tube
+ibm
+electronics
+boolean algebra
+alan turing
+eniac
+transistor
+cathode ray tube
+random access memory
+ram
+compiler
+grace hopper
+hard disk
+fortran
+integrated circuit
+chip
+lisp
+cobol
+computer game
+computer mouse
+basic
+supercomputer
+moore's law
+intel
+cpu
+arpanet
+internet
+unix operating system
+dynamic ram
+pascal
+microprocessor
+4004
+p vs. np problem
+floppy disk
+personal computer
+altair 8800
+microsoft
+apple
+sql
+sun microsystems
+java programming language
+c++
+cd-rom
+world wide web
+linux
+internet search engine
+smartphone
+usb
+dvd-rom
+oracle
+android
+java virtual machine
+software layer
+application software
+system software
+device driver

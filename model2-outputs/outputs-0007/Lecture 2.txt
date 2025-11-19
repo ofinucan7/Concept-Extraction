@@ -1,0 +1,22 @@
+java
+java virtual machine
+virtual machine
+java bytecode
+compiler
+application software
+system software
+device driver
+hello world program
+main method
+system.out.println
+string
+escape character
+variable
+identifier
+reserved java keyword
+lowerCamelCase
+UpperCamelCase
+concatenation
+comment
+single line comment
+block comment

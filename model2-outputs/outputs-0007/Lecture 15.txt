@@ -1,0 +1,23 @@
+object-oriented programming
+class
+subclass
+superclass
+ownership
+property
+static variable
+instance variable
+method
+static method
+instance method
+constructor
+constant
+final keyword
+class-level variable
+instance variable
+getter
+setter
+function overloading
+method overloading
+this keyword
+visibility type
+parameter

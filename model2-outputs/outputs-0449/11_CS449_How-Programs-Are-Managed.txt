@@ -1,0 +1,57 @@
+program
+operating system
+memory
+kernel memory
+stack
+bss
+data
+text
+process
+multitasking operating system
+processor
+control flow
+cpu scheduling
+cpu
+cpu state
+register
+multiplexing
+foreground process
+background process
+context
+context switch
+cooperative scheduling
+preemptive scheduling
+interrupt
+hardware exception
+software trap
+system call
+synchronous interrupt
+asynchronous interrupt
+round robin scheduling
+quantum
+priority
+hybrid scheduling
+human perception
+hardware timer
+interrupt vector table
+interrupt descriptor table
+interrupt handler
+divide by zero
+overflow
+double fault
+general protection fault
+page fault
+stack fault
+alignment error
+timer signal
+network device signal
+audio device signal
+read system call
+write system call
+open system call
+close system call
+stat system call
+fork system call
+execve system call
+syscall
+sysret

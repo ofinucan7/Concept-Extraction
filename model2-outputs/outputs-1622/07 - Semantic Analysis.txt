@@ -1,0 +1,35 @@
+semantic analysis
+semantics
+static
+dynamic
+compile-time
+runtime
+abstraction
+compile-time guarantee
+runtime guarantee
+halting problem
+type
+type system
+primitive type
+compound type
+struct
+class
+tuple
+array
+generic type
+type constructor
+array index out of bounds exception
+naming
+assembly language
+name resolution
+scoping
+static scope
+dynamic scope
+shadowing
+evaluation
+side effect
+evaluation order
+eager evaluation
+lazy evaluation
+abstract syntax tree
+AST interpreter

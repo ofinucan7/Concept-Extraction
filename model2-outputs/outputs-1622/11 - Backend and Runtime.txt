@@ -1,0 +1,49 @@
+backend
+runtime
+compiler
+source language
+target language
+abstract syntax tree
+AST
+intermediate representation
+IR
+high-level language
+HLL
+correctness
+code quality
+speed
+size
+optimization
+dynamic dispatch
+reflection
+class loading
+garbage collection
+exception
+virtual machine
+VM
+code generation
+codegen
+application binary interface
+ABI
+runtime library
+standard library
+stdlib
+stack frame
+symbol table
+expression
+statement
+control flow
+linking
+executable
+call graph
+symbolic linking
+relocation
+position-independent code
+PC-relative addressing
+debugging info
+executable format
+object file
+library
+assembly language
+MARS
+gcc

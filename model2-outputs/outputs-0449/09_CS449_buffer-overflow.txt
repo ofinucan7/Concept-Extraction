@@ -1,0 +1,68 @@
+buffer overflow
+systems software
+memory layout
+stack
+local variable
+procedure context
+heap
+malloc
+calloc
+new
+statically allocated data
+global variable
+string literal
+code segment
+executable machine instruction
+read-only memory
+x86-64 linux memory layout
+runtime stack
+shared library
+text segment
+stack frame
+caller stack frame
+callee stack frame
+return address
+frame pointer
+saved register context
+argument build area
+stack pointer
+struct
+memory referencing bug
+array bounds
+segmentation fault
+linux memory layout
+c programming language
+unchecked array bounds
+stack smashing
+string input
+return address overwrite
+security vulnerability
+unix function gets
+buffer overflow vulnerability
+strcpy
+scanf
+fgets
+vulnerable buffer
+disassembly
+stack frame layout
+stack pointer register
+return instruction pointer
+code injection attack
+exploit code
+remote code execution
+internet worm
+fingerd server
+root shell
+tcp connection
+heartbleed
+openssl
+heartbeat packet
+buffer over-read
+stack canary
+stack protector
+stack smashing detection
+non-executable code segment
+randomized stack offset
+system-level protection
+compiler protection
+stack check failure
