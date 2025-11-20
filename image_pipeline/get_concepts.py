@@ -16,7 +16,7 @@ OUTPUT_CONCEPTS_DIR = Path(r".\concepts")       # where to save concepts outputs
 OUTPUT_CONCEPTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # openai stuff
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4.1-mini"
 MAX_TOKENS = 1200
 USE_RESPONSES_API = False
 
@@ -32,11 +32,11 @@ SYSTEM_MSG = "You are a helpful assistant that follows the user instructions exa
 # --------------------------------------------------------
 # helpers
 
-def find_deck_jsons(root):
+def find_deck_jsons(root: Path) -> List[Path]:
     return sorted([p for p in root.glob("*.json") if p.is_file()])
 
 
-def gather_sentences(deck_obj):
+def gather_sentences(deck_obj: Dict[str, Any]) -> List[str]:
     out: List[str] = []
     for b in deck_obj.get("batches", []):
         if isinstance(b, dict) and "sentences" in b and isinstance(b["sentences"], list):
@@ -60,7 +60,7 @@ def gather_sentences(deck_obj):
 # --------------------------------------------------------
 # backoff
 
-def with_backoff(call_fn, *args, **kwargs):
+def with_backoff(call_fn, *args, **kwargs) -> str:
     delay = 1.0
     for attempt in range(MAX_RETRIES):
         try:
@@ -80,7 +80,7 @@ def with_backoff(call_fn, *args, **kwargs):
     raise RuntimeError("Gave up after repeated rate limit errors.")
 
 
-def call_model_chat_api(client, model, prompt_text):
+def call_model_chat_api(client: OpenAI, model: str, prompt_text: str) -> str:
     """Simple chat call (no JSON mode) used by with_backoff."""
     messages = [
         {"role": "system", "content": SYSTEM_MSG},
@@ -95,7 +95,7 @@ def call_model_chat_api(client, model, prompt_text):
     return resp.choices[0].message.content
 
 
-def call_model_responses_api(client, model, prompt_text):
+def call_model_responses_api(client: OpenAI, model: str, prompt_text: str) -> str:
     resp = client.responses.create(
         model=model,
         input=[
@@ -148,133 +148,63 @@ def build_concept_prompt(deck_name, sentences, slides_text):
     current_sentences = "\n".join(f"- {s}" for s in sentences)
 
     prompt = (
-        "You are an expert slide deck annotator. Your goal is to output a list of the concepts. "
+        "You are an expert academic annotator specializing in concept extraction from university lecture slides. "
+        "Identify and list only the key concepts that are explicitly defined, emphasized, or used in examples within " 
+        "the provided datasets. These datasets consist of a full transcript of the powerpoint along with sentences summarizing the powerpoint. Place a 90 percent weight on the text and 10 percent on the summaries. If unsure, exclude the term (prioritize precision over recall)."
+        "Again, your goal is to produce the most concise and minimal list of explicitly defined concepts."
+        "Do not include near-synonyms, plural variants, or implementation details unless the slide clearly defines "
+        "them as separate terms. If you are uncertain, omit the term."
+        "If multiple variants of a term appear (e.g., “override”, “overriding”), keep only the canonical or dictionary form. \n"
+        
+        "Slide-Deck Grounding Rule — Do not infer concepts not textually supported, but include any concept that the slide "
+        "defines, titles, or repeatedly references. You should be able to point to a particular slide and say this is"
+        "where this concept came from. \n"
+        "Granularity Rule — Annotate at the most specific meaningful level. If a concept phrase (“superclass constructor”) " 
+        "is only an instance or elaboration of a broader concept (“constructor”), include only the broader term unless "
+        "the slide defines the specific variant. \n"
+        "Definition & Emphasis Rule — Label words or phrases that are: explicitly defined (“X is a …”), visually emphasized (bold/italic/title-case), or used as key examples. \n"
+        "Explicit evidence includes patterns such as “X is a Y”, “X means …”, bold headings, or definition bullets. \n"
+        "Abbreviation Rule — Include both abbreviation and full form only if both appear. \n"
+        "Normalization Rule — Output each concept once, in singular form. Use lowercase unless the concept is an acronym. Do not repeat plural or synonymous variants (e.g., “method/methods”, “class/classes”). \n"
+        "Implementation Filter — Exclude code-implementation details (field, property, variable, getter, setter, overloaded constructor, superclass constructor) unless explicitly defined as conceptual terms. \n"
+        "Relation Boundary Rule — Include relational concepts only if the term itself is introduced or defined (e.g., “Inheritance = relationship between superclass and subclass”). Do not list relational variants (“parent class”, “child class”, “subtype”, “inter-class relationship”) unless defined verbatim. \n"
+        "Keyword Filter — Exclude language keywords or visibility specifiers (public, private, static, final) unless defined as concepts. \n"
+        "Semantic Boundary Rule — Ignore meta-instructional phrases or general advice (e.g., “modeling a problem”, “find the nouns”). \n"
+        "Core Concept Retention Rule — Always include foundational terms that appear in definitions, titles, or repeated headers (e.g., “program”, “memory”, “class”, “inheritance”). If a slide introduces a section or example with such a term, treat it as a core concept even if not fully defined. \n"
+        "Precision Emphasis Rule — When uncertain, omit rather than guess.\n"
+        "Self-Check Step — After extraction, remove any concept not clearly supported by definition, emphasis, or example. \n"
+
         "IMPORTANT OUTPUT FORMAT: Return ONLY the concept phrases, one per line, with NO bullets, "
         "NO hyphens, NO numbers, and NO extra commentary before or after the list. "
         "Concepts are to be no more than 4–5 words. Output the concepts as plain text, "
         "one concept per line.\n"
-        "Do not output any headings, labels, or explanations — only the concepts themselves.\n\n"
-        f"You will be annotating {deck_name}. A LLM has pulled these sentences from the "
-        "slidedeck you will be annotating. Those sentences were based on both the text and the images "
-        "on each slide. You should try to be as conservative as possible in concepts. Err on the side of "
-        "caution (i.e., if you are unsure if something is a concept, don't label it as one).\n"
-        "Here are the sentences for the new slidedeck:\n"
-        f"{current_sentences}\n\n"
-        "Additionally, here is the full text transcript of the slidedeck. "
-        "You should rely primarily on this transcript when deciding what is a concept:\n"
+
+        "===================================== \n"
+
+        "FILTERING STEP: \n"
+        "After identifying possible concepts, remove any that are **not explicitly** defined, emphasized, or used in an example or explination. \n"
+        "\n"
+        "OUTPUT REQUIREMENTS \n"
+        "- Extract all concepts from the sentences \n"
+        "- Do **not** number them. \n "
+        "- Do **not** include reasoning, commentary, or explanations. \n"
+        "- Include abbreviations *and* their full forms as separate lines. \n"
+        "- Keep consistent capitalization (use lowercase unless the concept is an acronym). \n"
+        "- Do not include REPEATED COURSE NAME as a concept. \n"
+        "\n"
+        "Self-Check Step (Precision Pass): \n"
+        "Before finalizing, review your list and remove any term that: \n"
+        "is not directly defined, emphasized, or exemplified; "
+        "duplicates or pluralizes another item; or "
+        "is a code keyword, modifier, or descriptive relationship rather than a conceptual noun phrase. \n"
+
+        f"You will be annotating {deck_name}. \n"
+        "And here is the text from the powerpoint: \n "
         f"{slides_text}\n\n"
-        "If the transcript and the sentences ever disagree, trust the transcript. "
-        "A valid concept MUST appear verbatim in the transcript — the words of the concept must appear "
-        "exactly as you output them.\n"
-        "If a term or phrase appears only in the sentence list and NOT anywhere in the transcript text, "
-        "you must assume it is noise or summarization and DO NOT output it as a concept.\n\n"
-        "You must IGNORE the title slide. Do not mark any concept taken from the title slide, course code, "
-        "lecture number, instructor name, date, or institution name. If a phrase appears only on the title slide "
-        "(for example: 'CS 0007 – Programming in Java', 'Lecture 17', 'University of Pittsburgh'), "
-        "do NOT output it as a concept.\n"
-        "Similarly, do not output generic section titles such as 'Main Portions of OOP', "
-        "'Inter-class relationships', 'Overview', or similar framing phrases as concepts. Instead, output "
-        "the more specific ideas listed under them (for example: 'subclass(es)', 'superclass(es)', 'ownership').\n\n"
-        "Now I am going to give you an example of a slidedeck that a human has annotated in this way. "
-        "Use this example only to understand how to choose and format concepts. Just because a word is a "
-        "concept in the EXAMPLE does not mean it will always be a concept in other slidedecks. "
-        "You will be given slidedecks from a wide variety of courses across many different topics. "
-        "Based on patterns you observe for why something is labeled as a concept in the example below, "
-        "make the judgment calls for whether something is a concept or not for the CURRENT deck using the "
-        "text given above.\n\n"
-        "Within the main text or transcript of a slideshow, there should be a verbatim match for every concept. "
-        "That is, the words must appear in the slideshow exactly as you write the concept for it to be considered "
-        "a concept.\n\n"
-        "Do not include examples as concepts. There may be concepts identified within an example, but you should "
-        "not output whole examples as concepts. For example, if there is an example about cars, vehicles, "
-        "or customers, do NOT output phrases like 'Vehicle class', 'Garage class', 'Automotive shop', "
-        "'Customer details', 'Service quote', or similar example-specific phrases. Instead, only output the "
-        "underlying generic CS concept, such as 'class', 'ownership', 'instance variables', or 'method'.\n\n"
-        "Also, do NOT label very generic programming terms as concepts unless the deck devotes a slide to "
-        "introducing or defining them as main ideas. In particular, terms like 'variable(s)', 'return type', "
-        "'void', 'scope', 'pass-by-value', 'pass-by-reference', 'passing in', 'access modifier(s)', or 'class' "
-        "by itself should usually NOT be output as concepts. Prefer the more specific OOP concepts such as "
-        "'instance variable(s)', 'constructor(s)', 'method(s)', 'protected access modifier', 'extends', "
-        "and 'inheritance' when those are clearly defined.\n"
-        "For this deck, do NOT output the following phrases as concepts even if they appear in the transcript "
-        "or sentences: 'variable(s)', 'return type', 'void', 'scope', 'pass-by-value', 'pass-by-reference', "
-        "'passing in', 'access modifier(s)', 'private access modifier', 'inter-class relationships', and 'class' "
-        "by itself. These are too generic here; instead, focus on the more specific OOP concepts they help explain.\n\n"
-        "If you could remove an adjective or extra word and the remaining phrase would still clearly be the same "
-        "concept, then REMOVE the extra word. For example, prefer 'method' over 'main method' unless 'main method' "
-        "is explicitly defined as its own concept; prefer 'class component(s)' or 'instance variables' over phrases "
-        "like 'simple properties', 'Vehicle class', or 'Garage class'.\n\n"
-        "When there are multiple surface forms of the same concept:\n"
-        "• If there are singular and plural variants, output a single canonical line using '(s)' for optional plural "
-        "(for example: 'Class(es)', 'Subclass(es)', 'Superclass(es)', 'Constructor(s)').\n"
-        "• If there is an abbreviation and its full form (for example 'OOP' and 'Object Oriented Programming'), "
-        "combine them into a single line using '/', such as 'OOP/Object Oriented Programming'.\n"
-        "Do NOT output both forms separately. Collapse such variants into a single canonical concept line.\n\n"
-        "For a deck like this one, which explicitly introduces object-oriented programming with slides titled "
-        "'Main Portions of OOP', 'Class Components', and 'Inter-class Relationships', you MUST include the "
-        "following as concepts if they appear anywhere in the transcript: 'OOP/Object Oriented Programming', "
-        "'class component(s)', 'class(es)', 'instance(s)', 'instance variable(s)', 'constructor(s)', 'method(s)', "
-        "'extends', 'inheritance', 'subclass(es)', 'superclass(es)', 'override', 'override annotation', "
-        "'method overriding', 'protected access modifier', and 'ownership'.\n\n"
-        "Here is that example slidedeck transcript:\n"
-        f"{cs0007_7_text}\n\n"
-        "Here are the sentences for that example slideshow:\n"
-        f"{cs0007_7_sentences}\n\n"
-        "Finally, here are the concepts that should be pulled from that example slideshow and its sentences:\n"
-        f"{cs0007_7_concepts}\n"
-        "\n==============================================\n"
-        "Here is another slidedeck text: \n"
-        f"{cs1502_10_text}"
-        "\n And for that slidedeck, here are the concepts \n"
-        f"{cs1502_10_concepts}"
-        "\n==============================================\n"
-        "Here is one more slidedeck text: \n"
-        f"{cs1550_23_text}"
-        "\n And for that slidedeck, here are the concepts \n"
-        f"{cs1550_23_concepts}"
-        "\n==============================================\n"
-        "Here is the annotation guide (for going from full text to concepts) that I want you to follow. "
-        "Even though this is for the full text to slides, for the sentences, apply a similar logic.\n"
-        "1. Purpose\n"
-        "This codebook establishes consistent criteria for annotating concepts within lecture slides. A "
-        "concept is defined as any explicitly introduced or emphasized idea that the instructor intends "
-        "students to understand and retain.\n"
-        "2. Primary Rules\n"
-        "2.1 Slide-Deck Grounding Rule\n"
-        "Only consider a term a concept if its justification exists within the slide deck itself. Do "
-        "not infer concepts from outside knowledge, prior lectures, or general domain assumptions.\n"
-        "2.2 Repetition Rule\n"
-        "Frequency of mention does not imply conceptual status. Inclusion depends on definition, emphasis, "
-        "or instructional focus, not on how many times a term appears.\n"
-        "2.3 Granularity Rule\n"
-        "Annotate concepts at the most specific level that adds meaningful information. If subdividing "
-        "a phrase adds no additional meaning or context, treat it as a single concept. If the smaller "
-        "components each carry distinct meaning, annotate them separately.\n"
-        "2.4 Definition and Emphasis Rule\n"
-        "A concept is any word or phrase that is:\n"
-        "• Clearly defined or described in the slide deck,\n"
-        "• Highlighted as an essential idea or takeaway,\n"
-        "• Used as the subject of an example or explanation.\n"
-        "2.5 Non-Conceptual Modifiers\n"
-        "Modifiers, keywords, or syntactic elements are not labeled unless the slide deck explicitly "
-        "defines or discusses them as concepts (e.g., 'static', 'visibility').\n"
-        "3. Supporting Rules\n"
-        "• Abbreviation Rule: Label abbreviations (e.g., 'ISR') when used to represent a defined concept.\n"
-        "• Variant Form Rule: Include plural or adjectival variants, but collapse variants into a single "
-        "canonical concept as described above.\n"
-        "• Adjoinment Rule: Annotate multiword concepts when their meaning is unified (e.g., 'function header').\n"
-        "• Generic Term Rule: Do not label generic or context-free terms (e.g., 'thing', 'object') unless defined "
-        "specifically in this deck.\n"
-        "• Out-of-Discipline Rule: Include external domain terms only if explicitly introduced "
-        "(e.g., 'least squares regression').\n"
-        "4. Annotation Strategy\n"
-        "Annotators should:\n"
-        "1. Read the slide deck in order.\n"
-        "2. Identify explicitly defined or emphasized terms.\n"
-        "3. Apply the granularity rule to decide labeling scope.\n"
-        "4. Avoid inferring or overgeneralizing beyond the presented material.\n"
-        "Remember: in your final answer, output ONLY the canonical concept phrases, one per line, "
-        "with no bullets, no numbers, and no extra commentary."
+        "And here is the sentences summarizing it: \n"
+        f"{sentences} \n \n"
+
+        "After going pulling the concepts, go back through the concepts list and compare what you have to the sentences and powerpoint to ensure that it meets the criteria for a concept."
     )
 
     return prompt
