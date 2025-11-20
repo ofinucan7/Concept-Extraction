@@ -20,7 +20,7 @@ load_dotenv()
 #   - "labels/<Deck Name>.gold.txt"     (deck-level concepts; one per line)
 #   - "labels/<Deck Name>.gold.json"    (deck-level concepts; list or {"concepts":[...]})
 
-BATCH_SIZE = 5 # slides per request
+BATCH_SIZE = 3 # slides per request
 USE_RESPONSES_API = False 
 
 # vision token reducers
@@ -157,8 +157,12 @@ def load_gold_concepts_for_deck(deck_name):
 # --------------------------------------------------------
 def prompt(deck_name, slide_indices, guidance_json, gold_concepts):
     prompt = ("You are an expert slide-deck annotator. Your goal is to look at screenshots of the images "
-              "and create sentences to describe what is happening on the slides. This includes looking"
+              "and create sentences to describe ALL of the key concepts in the slide. This includes looking"
               "at the text and processing meaning in addition to looking at any visuals on the slideshow."
+              "Again, the goal of this is to get at least 1 sentence per key concept."
+              "You should not write anything about the course number, ie CS-1234 or the professor"
+              "Assume the reader of your sentences is taking the class for the first time and is "
+              "just looking for brief summaries of the concepts from the lecture."
               "You should ensure that all key concepts from the slidedeck are included in at least one"
               "sentence. Multiple sentences can be about the same topic, just ensure that every concept"
               "is mentioned somewhere in that chunk of slide. Here is an example for the type of "
@@ -332,7 +336,7 @@ def main():
     ANNOTATIONS_OUTPUT_FOLDER = Path(r".\annotations")
     ANNOTATIONS_OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
-    OPEN_AI_MODEL = "gpt-4o-mini"
+    OPEN_AI_MODEL = "gpt-4.1-mini"
     ai_model = OpenAI()
 
     for slideshow in find_slide_folder(IMAGE_INPUT_FOLDER):
