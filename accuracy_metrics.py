@@ -4,10 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # ------------------------------------------------------------
-# USER SETTINGS (EDIT THESE)
+# USER SETTINGS 
 # ------------------------------------------------------------
-GOLD_DIR = "gold-outputs"       # folder containing outputs-####
-MODEL_DIR = "model2-outputs"     # folder containing outputs-####
+GOLD_DIR = "gold-outputs"
+MODEL_DIR = "model1-outputs"
 
 
 # ------------------------------------------------------------
@@ -45,11 +45,15 @@ def find_matched_classes():
 # PROCESS SINGLE CLASS
 # ------------------------------------------------------------
 def analyze_class(class_folder):
-    """Match gold *_annotations.txt with model *.txt using shared slide ID."""
+    """Return:
+       - per-slide rows (list of dicts)
+       - aggregate gold set
+       - aggregate pred set
+    """
     gold_path = os.path.join(GOLD_DIR, class_folder)
     model_path = os.path.join(MODEL_DIR, class_folder)
 
-    # gold: slideID_annotations.txt  -> slideID
+    # gold: slideID_annotations.txt -> slideID
     gold_map = {}
     for p in glob.glob(os.path.join(gold_path, "*.txt")):
         base = os.path.basename(p)
@@ -61,14 +65,19 @@ def analyze_class(class_folder):
     model_map = {}
     for p in glob.glob(os.path.join(model_path, "*.txt")):
         base = os.path.basename(p)
-        slide_id = base.replace(".txt", "")
+        if base.endswith("_annotations.txt"):
+            slide_id = base.replace("_annotations.txt", "")
+        else:
+            slide_id = base.replace(".txt", "")
         model_map[slide_id] = base
 
-    # intersection of slide IDs
     matched_ids = sorted(gold_map.keys() & model_map.keys())
 
     rows = []
     class_num = class_folder.replace("outputs-", "")
+
+    agg_gold = set()
+    agg_pred = set()
 
     for slide_id in matched_ids:
         gold_file = gold_map[slide_id]
@@ -77,10 +86,14 @@ def analyze_class(class_folder):
         gold = load_file_lines(os.path.join(gold_path, gold_file))
         pred = load_file_lines(os.path.join(model_path, model_file))
 
+        # accumulate
+        agg_gold.update(gold)
+        agg_pred.update(pred)
+
         f1 = compute_f1(gold, pred)
         rows.append({"class": class_num, "f1": f1})
 
-    return rows
+    return rows, agg_gold, agg_pred
 
 
 # ------------------------------------------------------------
@@ -89,27 +102,42 @@ def analyze_class(class_folder):
 def main():
     classes = find_matched_classes()
     all_rows = []
+    agg_entries = []   # store aggregate f1 per class
 
     for folder in classes:
-        all_rows.extend(analyze_class(folder))
+        per_slide_rows, agg_gold, agg_pred = analyze_class(folder)
+        all_rows.extend(per_slide_rows)
+
+        # compute aggregate F1 for the entire class
+        agg_f1 = compute_f1(list(agg_gold), list(agg_pred))
+        class_num = folder.replace("outputs-", "")
+
+        agg_entries.append({
+            "class": class_num,
+            "aggregate_f1": agg_f1
+        })
 
     if not all_rows:
         print("\nERROR: No valid classes or matched slide files found.")
         return
 
     df = pd.DataFrame(all_rows)
+    df_agg = pd.DataFrame(agg_entries)
 
     summary = df.groupby("class").agg(
         avg_f1=("f1", "mean"),
         var_f1=("f1", "var")
     ).reset_index()
 
-    summary.to_csv("class_f1_summary.csv", index=False)
+    # merge in aggregate F1 per class
+    final_summary = summary.merge(df_agg, on="class", how="left")
+
+    final_summary.to_csv("class_f1_summary.csv", index=False)
     print("\nSaved: class_f1_summary.csv\n")
-    print(summary)
+    print(final_summary)
 
     plt.figure(figsize=(7, 5))
-    plt.hist(summary["avg_f1"], bins=8, edgecolor="black")
+    plt.hist(final_summary["avg_f1"], bins=8, edgecolor="black")
     plt.title("Average F1 by Class")
     plt.xlabel("Avg F1")
     plt.ylabel("Count")
