@@ -1,4 +1,4 @@
-Concept Extraction from University Lecture Slides with LLMs
+## Concept Extraction from University Lecture Slides with LLMs
 
 This repository contains the code, prompts, and analysis pipelines for a research project investigating how reliably large language models (LLMs) can extract explicit instructional concepts from university lecture slide decks.
 
