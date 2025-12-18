@@ -4,7 +4,7 @@ This repository contains the code, prompts, and analysis pipelines for a researc
 
 The work evaluates LLM-based concept extraction against expert human annotations and analyzes which slide-level linguistic properties most strongly influence extraction performance.
 
-Project Overview
+# Project Overview
 
 Lecture slides are one of the primary ways instructors communicate core concepts to students, yet manually extracting those concepts is time-consuming, subjective, and difficult to scale.
 
